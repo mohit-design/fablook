@@ -1,0 +1,808 @@
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+
+/*-------- Common CSS Starts -------*/
+
+body.active { overflow: hidden; }
+.container-fluid { padding: 20px 15px; }
+.section-heading > div { font-size: 1.6rem; margin-bottom: 10px; }
+.section-heading > div > img { display: block; }
+.section-heading > h2 { font-size: 2.4rem; margin-bottom: 20px; }
+.section-heading-ip > h1 { font-size: 3rem; }
+p { font-size: 1.6rem; }
+
+/*-------- Common CSS Ends -------*/
+
+/*------- LogIn and SignUp Page Starts -------*/
+
+.box-login-signup { padding: 20px; }
+.box-login-signup-heading > p,
+.form-group-contact { margin-bottom: 20px; }
+
+/*------- LogIn and SignUp Page Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+  /*------- Mobile Logo and Burger Menu Section Starts -------*/
+
+.bg-logo-burger-menu-mobile { background-color: #FFFFFF; display: block; left: 0; padding: 10px 15px; position: fixed; top: 0; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -ms-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; width: 100%; z-index: 3; }
+.header-logo-mobile > a { display: inline-block; }
+.header-logo-mobile > a > img { height: 46px; }
+
+	  /*------- Mobile Hamburger Menu Section Starts -------*/
+
+.burger-menu { background-color: transparent; cursor: pointer; height: 25px; position: relative; width: 25px; z-index: 2; }
+.burger-menu span { background-color: #1E1E1E; height: 2px; left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 0.5s ease 0.5s; -moz-transition: 0.5s ease 0.5s; -ms-transition: 0.5s ease 0.5s; -o-transition: 0.5s ease 0.5s; transition: 0.5s ease 0.5s; width: 25px; z-index: 2; }
+.burger-menu span::before,
+.burger-menu span::after { background-color: #000000; content: ""; display: block; height: 2px; position: absolute; top: 10px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 25px; z-index: 2; }
+.burger-menu span::before { top: -10px; }
+.burger-menu.active span { background-color: transparent; -webkit-transition: 0s ease; -moz-transition: 0s ease; -ms-transition: 0s ease; -o-transition: 0s ease; transition: 0s ease; }
+.burger-menu.active span::before { top: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.burger-menu.active span::after { top: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+	  /*------- Mobile Hamburger Menu Section Ends -------*/
+
+  /*------- Mobile Logo and Burger Menu Section Ends -------*/
+
+  /*------- Mobile Navbar Menu Section Starts -------*/
+
+.fixed-navbar-menu-mobile { background-color: #FFFFFF; display: block; height: 100%; left: 0; position: fixed; top: 0; -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -o-transform: translateY(-100%); transform: translateY(-100%); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; width: 100%; z-index: 4; }
+.fixed-navbar-menu-mobile.active { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
+.fixed-navbar-menu-mobile-close { background-color: #0382B7; position: fixed; right: 0; top: 0; z-index: 10; }
+.fixed-navbar-menu-mobile-close > i { color: #FFFFFF; display: block; font-size: 2.4rem; height: 44px; line-height: 44px; text-align: center; width: 44px; }
+.menu-listing-mobile { left: 50%; position: fixed; text-align: center; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 90%; z-index: 4; }
+.menu-listing-mobile > li { display: block; margin-bottom: 15px; }
+.menu-listing-mobile > li:last-child { margin-bottom: 0; }
+.menu-listing-mobile > li:nth-child(4) { margin-bottom: 30px; }
+.menu-listing-mobile > li > a { color: #1E1E1E; font: 2rem/1.2 "NunitoSans-SemiBold"; }
+.menu-listing-mobile > li.active > a,
+.menu-listing-mobile > li > a:hover { color: #0382B7; }
+.menu-listing-mobile > li.donate-now-li > a { background-color: #0382B7; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; color: #FFFFFF; display: block; font: 1.6rem/normal "NunitoSans-Bold"; padding: 16px 25px; text-align: center; text-transform: uppercase; }
+.menu-listing-mobile > li.donate-now-li > a:hover { background-color: #FFB800; color: #1E1E1E; }
+
+  /*------- Mobile Navbar Menu Section Ends -------*/
+
+  /*------- Desktop Header Section Starts -------*/
+
+.bg-header-desktop { display: none; }
+.shopping-cart-listing-dropdown { min-width: 100%; right: -85px; top: 47px; z-index: 2; }
+
+  /*------- Desktop Header Section Ends -------*/
+
+  /*------- Wrapper Section Starts -------*/
+
+.main-wrapper { margin-top: 70px; }
+
+  /*------- Wrapper Section Ends -------*/
+
+  /*------- Slider Section Starts -------*/
+
+.bg-banner-slider { padding: 0; }
+.box-banner { left: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 85%; }
+.box-banner > h1 { font-size: 3rem; }
+.btn-read-more-view-products { display: block; }
+.btn-read-more-view-products > li { margin-right: 0; }
+.btn-read-more-view-products > li > a { display: block; }
+.btn-read-more-view-products > li:last-child { margin-top: 15px; }
+.btn-read-more-view-products > li:last-child > a { padding: 14px 17px; }
+.banner-slick-slider .slick-slide img { height: 100vh; }
+.banner-slick-slider .slick-prev { -webkit-border-radius: 0 7px 7px 0; -moz-border-radius: 0 7px 7px 0; -ms-border-radius: 0 7px 7px 0; -o-border-radius: 0 7px 7px 0; border-radius: 0 7px 7px 0; height: 40px; width: 40px; }
+.banner-slick-slider .slick-next { -webkit-border-radius: 7px 0 0 7px; -moz-border-radius: 7px 0 0 7px; -ms-border-radius: 7px 0 0 7px; -o-border-radius: 7px 0 0 7px; border-radius: 7px 0 0 7px; height: 40px; width: 40px; }
+
+  /*------- Slider Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.bg-about { padding: 75px 15px 20px; }
+.ohm-image-about { display: none; }
+.about-image-top { left: 0; top: -50px; }
+.about-image-top > img,
+.about-image-bottom > img { height: 100px; width: 100px; }
+.about-image-center > img { width: 85%; }
+.about-image-bottom { bottom: -50px; right: 0; }
+.about-info { margin: 70px 0 0; }
+.about-desc > p { text-align: justify; }
+
+  /*------- About Us Section Ends -------*/
+
+  /*------- Products Section Starts -------*/
+
+.box-products { margin-bottom: 20px; }
+.box-products:hover { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
+.btn-read-view-more-products { margin-top: 0; }
+
+  /*------- Products Section Ends -------*/
+
+  /*------- Extra Details Section Starts -------*/
+
+.bg-extra-details { padding: 20px 15px 0; }
+.box-extra-details { margin-bottom: 20px; }
+
+  /*------- Extra Details Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.footer-about-desc > p { margin-bottom: 20px; padding-right: 0; text-align: justify; }
+.footer-heading > h3 { font-size: 2rem; margin-bottom: 15px; }
+.quick-links-listing > li,
+.footer-contact-listing > li { margin-bottom: 10px; }
+.quick-links-listing > li:last-child,
+.footer-contact-listing > li:last-child { margin-bottom: 20px; }
+
+  /*------- Footer Section Ends -------*/
+
+  /*------- Copyright Section Starts -------*/
+
+.copyright-info > p,
+.design-develop-by > p { font-size: 1.4rem; text-align: center; }
+.copyright-info > p { margin-bottom: 10px; }
+
+  /*------- Copyright Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+/*------- About Us Page Starts -------*/
+
+  /*------- Inner Banner Section Starts -------*/
+
+.bg-inner-banner-ip { padding: 30px 15px; }
+
+	/*------- Inner Banner Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.about-desc-ap > p:last-child { margin-bottom: 0; }
+
+	/*------- About Us Section Ends -------*/
+
+  /*------- Vision and Mission Section Starts -------*/
+
+.bg-vision-mission-ap { padding: 0 15px; }
+.vision-mission-section-heading > h2 { display: block; }
+.vision-mission-section-heading > h2 > img { height: 50px; margin-right: 5px; width: 50px; }
+.vision-mission-section-heading > h2 > span { margin-left: 0; }
+.vision-mission-info > p { margin-bottom: 20px; }
+
+	/*------- Vision and Mission Section Ends -------*/
+
+/*------- About Us Page Ends -------*/
+
+/*------- Products Page Starts -------*/
+
+  /*------- Products Section Starts -------*/
+
+.pagination-design { margin-top: 0; }
+
+  /*------- Products Section Ends -------*/
+
+/*------- Products Page Ends -------*/
+
+/*------- Product Details Page Starts -------*/
+
+  /*------- Product Details Section Starts -------*/
+
+.box-product-detail-image > img { margin-bottom: 20px; }
+.box-product-detail-heading > h3 { font-size: 2rem; }
+.box-product-detail-desc > p { text-align: justify; }
+
+  /*------- Product Details Section Ends -------*/
+
+/*------- Product Details Page Ends -------*/
+
+/*------- View Cart Page Starts -------*/
+
+  /*------- View Cart Section Starts -------*/
+
+.box-table-design-update-cart { margin-bottom: 20px; }
+.view-cart-image-product-name-vcp { display: block; }
+.view-cart-image-vcp > img { margin: 0 0 10px 0; width: 100%; }
+.td-update-cart { text-align: left; }
+
+  /*------- View Cart Section Ends -------*/
+
+/*------- View Cart Page Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
+
+  /*------- Contact Info and Map Section Starts -------*/
+
+.box-contact-info-cp { margin-bottom: 20px; padding: 20px; }
+.box-contact-icon-cp { height: 70px; width: 70px; }
+.box-contact-icon-cp > i { font-size: 3rem; line-height: 70px; }
+.box-contact-info-cp > address { font-size: 1.6rem; }
+.map-cp { height: 400px; }
+.bg-contact-form { padding-top: 0; }
+
+  /*------- Contact Info and Map Section Ends -------*/
+
+/*------- Contact Us Page Ends -------*/
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+/*-------- Common CSS Starts -------*/
+
+body.active { overflow: hidden; }
+.container-fluid { padding: 30px 15px; }
+.section-heading > div { font-size: 1.6rem; }
+.section-heading > h2 { font-size: 2.4rem; margin-bottom: 20px; }
+.section-heading-ip > h1 { font-size: 3rem; }
+p { font-size: 1.6rem; }
+
+/*-------- Common CSS Ends -------*/
+
+/*------- LogIn and SignUp Page Starts -------*/
+
+.box-login-signup-heading > p { margin-bottom: 20px; }
+
+/*------- LogIn and SignUp Page Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+  /*------- Mobile Logo and Burger Menu Section Starts -------*/
+
+.bg-logo-burger-menu-mobile { background-color: #FFFFFF; display: block; left: 0; padding: 10px 15px; position: fixed; top: 0; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -ms-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; width: 100%; z-index: 3; }
+.header-logo-mobile > a { display: inline-block; }
+.header-logo-mobile > a > img { height: 46px; }
+
+	  /*------- Mobile Hamburger Menu Section Starts -------*/
+
+.burger-menu { background-color: transparent; cursor: pointer; height: 25px; position: relative; width: 25px; z-index: 2; }
+.burger-menu span { background-color: #1E1E1E; height: 2px; left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 0.5s ease 0.5s; -moz-transition: 0.5s ease 0.5s; -ms-transition: 0.5s ease 0.5s; -o-transition: 0.5s ease 0.5s; transition: 0.5s ease 0.5s; width: 25px; z-index: 2; }
+.burger-menu span::before,
+.burger-menu span::after { background-color: #000000; content: ""; display: block; height: 2px; position: absolute; top: 10px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 25px; z-index: 2; }
+.burger-menu span::before { top: -10px; }
+.burger-menu.active span { background-color: transparent; -webkit-transition: 0s ease; -moz-transition: 0s ease; -ms-transition: 0s ease; -o-transition: 0s ease; transition: 0s ease; }
+.burger-menu.active span::before { top: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.burger-menu.active span::after { top: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+	  /*------- Mobile Hamburger Menu Section Ends -------*/
+
+  /*------- Mobile Logo and Burger Menu Section Ends -------*/
+
+  /*------- Mobile Navbar Menu Section Starts -------*/
+
+.fixed-navbar-menu-mobile { background-color: #FFFFFF; display: block; height: 100%; left: 0; position: fixed; top: 0; -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -o-transform: translateY(-100%); transform: translateY(-100%); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; width: 100%; z-index: 4; }
+.fixed-navbar-menu-mobile.active { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
+.fixed-navbar-menu-mobile-close { background-color: #0382B7; position: fixed; right: 0; top: 0; z-index: 10; }
+.fixed-navbar-menu-mobile-close > i { color: #FFFFFF; display: block; font-size: 2.4rem; height: 44px; line-height: 44px; text-align: center; width: 44px; }
+.menu-listing-mobile { left: 50%; position: fixed; text-align: center; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 90%; z-index: 4; }
+.menu-listing-mobile > li { display: block; margin-bottom: 15px; }
+.menu-listing-mobile > li:last-child { margin-bottom: 0; }
+.menu-listing-mobile > li:nth-child(4) { margin-bottom: 30px; }
+.menu-listing-mobile > li > a { color: #1E1E1E; font: 2rem/1.2 "NunitoSans-SemiBold"; }
+.menu-listing-mobile > li.active > a,
+.menu-listing-mobile > li > a:hover { color: #0382B7; }
+.menu-listing-mobile > li.donate-now-li > a { background-color: #0382B7; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; color: #FFFFFF; display: block; font: 1.6rem/normal "NunitoSans-Bold"; padding: 16px 25px; text-align: center; text-transform: uppercase; }
+.menu-listing-mobile > li.donate-now-li > a:hover { background-color: #FFB800; color: #1E1E1E; }
+
+  /*------- Mobile Navbar Menu Section Ends -------*/
+
+  /*------- Desktop Header Section Starts -------*/
+
+.bg-header-desktop { display: none; }
+
+  /*------- Desktop Header Section Ends -------*/
+
+  /*------- Wrapper Section Starts -------*/
+
+.main-wrapper { margin-top: 70px; }
+
+  /*------- Wrapper Section Ends -------*/
+
+  /*------- Slider Section Starts -------*/
+
+.bg-banner-slider { padding: 0; }
+.box-banner { left: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 80%; }
+.box-banner > h1 { font-size: 3rem; }
+.btn-read-more-view-products { display: block; }
+.btn-read-more-view-products > li { margin-right: 0; }
+.btn-read-more-view-products > li > a { display: block; }
+.btn-read-more-view-products > li:last-child { margin-top: 15px; }
+.btn-read-more-view-products > li:last-child > a { padding: 14px 17px; }
+.banner-slick-slider .slick-slide img { height: 100vh; }
+.banner-slick-slider .slick-prev { -webkit-border-radius: 0 7px 7px 0; -moz-border-radius: 0 7px 7px 0; -ms-border-radius: 0 7px 7px 0; -o-border-radius: 0 7px 7px 0; border-radius: 0 7px 7px 0; height: 44px; width: 44px; }
+.banner-slick-slider .slick-next { -webkit-border-radius: 7px 0 0 7px; -moz-border-radius: 7px 0 0 7px; -ms-border-radius: 7px 0 0 7px; -o-border-radius: 7px 0 0 7px; border-radius: 7px 0 0 7px; height: 44px; width: 44px; }
+
+  /*------- Slider Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.bg-about { padding: 130px 15px 30px; }
+.ohm-image-about { display: none; }
+.about-image-top { left: 0; top: -100px; }
+.about-image-center > img { width: 70%; }
+.about-image-bottom { bottom: -80px; right: 0; }
+.about-info { margin: 100px 0 0; }
+.about-desc > p { text-align: justify; }
+
+  /*------- About Us Section Ends -------*/
+
+  /*------- Products Section Starts -------*/
+
+.btn-read-view-more-products { margin-top: 0; }
+
+  /*------- Products Section Ends -------*/
+
+  /*------- Extra Details Section Starts -------*/
+
+.bg-extra-details { padding: 30px 15px 0; }
+
+  /*------- Extra Details Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.footer-about-desc > p { margin-bottom: 20px; padding-right: 0; text-align: justify; }
+.footer-heading > h3 { font-size: 2rem; margin-bottom: 15px; }
+.quick-links-listing > li,
+.footer-contact-listing > li { margin-bottom: 10px; }
+.quick-links-listing > li:last-child,
+.footer-contact-listing > li:last-child { margin-bottom: 20px; }
+
+  /*------- Footer Section Ends -------*/
+
+  /*------- Copyright Section Starts -------*/
+
+.copyright-info > p,
+.design-develop-by > p { text-align: center; }
+.copyright-info > p { margin-bottom: 10px; }
+
+  /*------- Copyright Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+/*------- About Us Page Starts -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.about-desc-ap > p:last-child { margin-bottom: 0; }
+
+  /*------- About Us Section Ends -------*/
+
+  /*------- Vision and Mission Section Starts -------*/
+
+.bg-vision-mission-ap { padding: 0 15px; }
+.vision-mission-section-heading > h2 { display: block; }
+.vision-mission-section-heading > h2 > img { height: 50px; margin-right: 5px; width: 50px; }
+.vision-mission-section-heading > h2 > span { margin-left: 0; }
+.vision-mission-info > p { margin-bottom: 30px; }
+
+	/*------- Vision and Mission Section Ends -------*/
+
+/*------- About Us Page Ends -------*/
+
+/*------- Products Page Starts -------*/
+
+  /*------- Products Section Starts -------*/
+
+.pagination-design { margin-top: 0; }
+
+  /*------- Products Section Ends -------*/
+
+/*------- Products Page Ends -------*/
+
+/*------- Product Details Page Starts -------*/
+
+  /*------- Product Details Section Starts -------*/
+
+.box-product-detail-image > img { margin-bottom: 20px; }
+.box-product-detail-heading > h3 { font-size: 2rem; }
+.box-product-detail-desc > p { text-align: justify; }
+
+  /*------- Product Details Section Ends -------*/
+
+/*------- Product Details Page Ends -------*/
+
+/*------- View Cart Page Starts -------*/
+
+  /*------- View Cart Section Starts -------*/
+
+.box-table-design-update-cart { margin-bottom: 30px; }
+.view-cart-image-product-name-vcp { display: block; }
+.view-cart-image-vcp > img { margin: 0 0 10px 0; width: 100%; }
+.td-update-cart { text-align: left; }
+
+  /*------- View Cart Section Ends -------*/
+
+/*------- View Cart Page Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
+
+  /*------- Contact Info and Map Section Starts -------*/
+
+.box-contact-info-cp { padding: 20px; }
+.box-contact-info-cp-3 { margin-bottom: 30px; }
+.box-contact-icon-cp { height: 70px; width: 70px; }
+.box-contact-icon-cp > i { font-size: 3rem; line-height: 70px; }
+.box-contact-info-cp > address { font-size: 1.6rem; }
+.map-cp { height: 400px; }
+.bg-contact-form { padding-top: 0; }
+
+  /*------- Contact Info and Map Section Ends -------*/
+
+/*------- Contact Us Page Ends -------*/
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+/*-------- Common CSS Starts -------*/
+
+body.active { overflow: hidden; }
+.container-fluid { padding: 30px 15px; }
+.section-heading > div { font-size: 1.6rem; margin-bottom: 10px; }
+.section-heading > div > img { display: block; }
+.section-heading > h2 { font-size: 2.4rem; margin-bottom: 20px; }
+.section-heading-ip > h1 { font-size: 3rem; }
+
+/*-------- Common CSS Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+  /*------- Mobile Logo and Burger Menu Section Starts -------*/
+
+.bg-logo-burger-menu-mobile { background-color: #FFFFFF; display: block; left: 0; padding: 10px 15px; position: fixed; top: 0; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -ms-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; width: 100%; z-index: 3; }
+.header-logo-mobile > a { display: inline-block; }
+.header-logo-mobile > a > img { height: 46px; }
+
+	  /*------- Mobile Hamburger Menu Section Starts -------*/
+
+.burger-menu { background-color: transparent; cursor: pointer; height: 25px; position: relative; width: 25px; z-index: 2; }
+.burger-menu span { background-color: #1E1E1E; height: 2px; left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 0.5s ease 0.5s; -moz-transition: 0.5s ease 0.5s; -ms-transition: 0.5s ease 0.5s; -o-transition: 0.5s ease 0.5s; transition: 0.5s ease 0.5s; width: 25px; z-index: 2; }
+.burger-menu span::before,
+.burger-menu span::after { background-color: #000000; content: ""; display: block; height: 2px; position: absolute; top: 10px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 25px; z-index: 2; }
+.burger-menu span::before { top: -10px; }
+.burger-menu.active span { background-color: transparent; -webkit-transition: 0s ease; -moz-transition: 0s ease; -ms-transition: 0s ease; -o-transition: 0s ease; transition: 0s ease; }
+.burger-menu.active span::before { top: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.burger-menu.active span::after { top: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+	  /*------- Mobile Hamburger Menu Section Ends -------*/
+
+  /*------- Mobile Logo and Burger Menu Section Ends -------*/
+
+  /*------- Mobile Navbar Menu Section Starts -------*/
+
+.fixed-navbar-menu-mobile { background-color: #FFFFFF; display: block; height: 100%; left: 0; position: fixed; top: 0; -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -o-transform: translateY(-100%); transform: translateY(-100%); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; width: 100%; z-index: 4; }
+.fixed-navbar-menu-mobile.active { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
+.fixed-navbar-menu-mobile-close { background-color: #0382B7; position: fixed; right: 0; top: 0; z-index: 10; }
+.fixed-navbar-menu-mobile-close > i { color: #FFFFFF; display: block; font-size: 2.4rem; height: 44px; line-height: 44px; text-align: center; width: 44px; }
+.menu-listing-mobile { left: 50%; position: fixed; text-align: center; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 90%; z-index: 4; }
+.menu-listing-mobile > li { display: block; margin-bottom: 15px; }
+.menu-listing-mobile > li:last-child { margin-bottom: 0; }
+.menu-listing-mobile > li:nth-child(4) { margin-bottom: 30px; }
+.menu-listing-mobile > li > a { color: #1E1E1E; font: 2rem/1.2 "NunitoSans-SemiBold"; }
+.menu-listing-mobile > li.active > a,
+.menu-listing-mobile > li > a:hover { color: #0382B7; }
+.menu-listing-mobile > li.donate-now-li > a { background-color: #0382B7; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; color: #FFFFFF; display: block; font: 1.6rem/normal "NunitoSans-Bold"; padding: 16px 25px; text-align: center; text-transform: uppercase; }
+.menu-listing-mobile > li.donate-now-li > a:hover { background-color: #FFB800; color: #1E1E1E; }
+
+  /*------- Mobile Navbar Menu Section Ends -------*/
+
+  /*------- Desktop Header Section Starts -------*/
+
+.bg-header-desktop { display: none; }
+
+  /*------- Desktop Header Section Ends -------*/
+
+  /*------- Wrapper Section Starts -------*/
+
+.main-wrapper { margin-top: 70px; }
+
+  /*------- Wrapper Section Ends -------*/
+
+  /*------- Slider Section Starts -------*/
+
+.bg-banner-slider { padding: 0; }
+.box-banner { left: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 80%; }
+.box-banner > h1 { font-size: 3rem; }
+.banner-slick-slider .slick-slide img { height: 100vh; }
+.banner-slick-slider .slick-prev { -webkit-border-radius: 0 7px 7px 0; -moz-border-radius: 0 7px 7px 0; -ms-border-radius: 0 7px 7px 0; -o-border-radius: 0 7px 7px 0; border-radius: 0 7px 7px 0; height: 44px; width: 44px; }
+.banner-slick-slider .slick-next { -webkit-border-radius: 7px 0 0 7px; -moz-border-radius: 7px 0 0 7px; -ms-border-radius: 7px 0 0 7px; -o-border-radius: 7px 0 0 7px; border-radius: 7px 0 0 7px; height: 44px; width: 44px; }
+
+  /*------- Slider Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.bg-about { padding: 130px 15px 30px; }
+.ohm-image-about { display: none; }
+.about-image-top { left: 0; top: -100px; }
+.about-image-center > img { width: 70%; }
+.about-image-bottom { bottom: -80px; right: 0; }
+.about-info { margin: 100px 0 0; }
+.about-desc > p { text-align: justify; }
+
+  /*------- About Us Section Ends -------*/
+
+  /*------- Products Section Starts -------*/
+
+.btn-read-view-more-products { margin-top: 0; }
+
+  /*------- Products Section Ends -------*/
+
+  /*------- Extra Details Section Starts -------*/
+
+.bg-extra-details { padding: 30px 15px 0; }
+
+  /*------- Extra Details Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.footer-about-desc > p { margin-bottom: 20px; padding-right: 0; text-align: justify; }
+.footer-heading > h3 { font-size: 2rem; margin-bottom: 15px; }
+.quick-links-listing > li,
+.footer-contact-listing > li { margin-bottom: 10px; }
+
+  /*------- Footer Section Ends -------*/
+
+  /*------- Copyright Section Starts -------*/
+
+.copyright-info > p,
+.design-develop-by > p { text-align: center; }
+.copyright-info > p { margin-bottom: 10px; }
+
+  /*------- Copyright Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+/*------- About Us Page Starts -------*/
+
+  /*------- Inner Banner Section Starts -------*/
+
+.bg-inner-banner-ip { padding: 60px 15px; }
+
+	/*------- Inner Banner Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.about-desc-ap > p:last-child { margin-bottom: 0; }
+
+  /*------- About Us Section Ends -------*/
+
+  /*------- Vision and Mission Section Starts -------*/
+
+.bg-vision-mission-ap { padding: 0 15px; }
+.vision-mission-section-heading > h2 { display: block; }
+.vision-mission-section-heading > h2 > img { height: 55px; margin-right: 5px; width: 55px; }
+.vision-mission-section-heading > h2 > span { margin-left: 0; }
+.vision-mission-info > p { margin-bottom: 30px; }
+
+	/*------- Vision and Mission Section Ends -------*/
+
+/*------- About Us Page Ends -------*/
+
+/*------- Products Page Starts -------*/
+
+  /*------- Products Section Starts -------*/
+
+.pagination-design { margin-top: 0; }
+
+  /*------- Products Section Ends -------*/
+
+/*------- Products Page Ends -------*/
+
+/*------- Product Details Page Starts -------*/
+
+  /*------- Product Details Section Starts -------*/
+
+.box-product-detail-heading > h3 { font-size: 2.2rem; }
+.box-product-detail-desc > p { text-align: justify; }
+
+  /*------- Product Details Section Ends -------*/
+
+/*------- Product Details Page Ends -------*/
+
+/*------- View Cart Page Starts -------*/
+
+  /*------- View Cart Section Starts -------*/
+
+.box-table-design-update-cart { margin-bottom: 30px; }
+
+  /*------- View Cart Section Ends -------*/
+
+/*------- View Cart Page Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
+
+  /*------- Contact Info and Map Section Starts -------*/
+
+.box-contact-info-cp { padding: 20px; }
+.box-contact-icon-cp { height: 70px; width: 70px; }
+.box-contact-icon-cp > i { font-size: 3rem; line-height: 70px; }
+.map-cp { height: 600px; }
+.bg-contact-form { padding-top: 0; }
+
+  /*------- Contact Info and Map Section Ends -------*/
+
+/*------- Contact Us Page Ends -------*/
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+/*-------- Common CSS Starts -------*/
+
+body.active { overflow: hidden; }
+.container-fluid { padding: 30px 15px; }
+.section-heading > div { font-size: 1.6rem; margin-bottom: 10px; }
+.section-heading > div > img { display: block; }
+.section-heading > h2 { font-size: 2.4rem; margin-bottom: 20px; }
+.section-heading-ip > h1 { font-size: 3rem; }
+
+/*-------- Common CSS Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+  /*------- Mobile Logo and Burger Menu Section Starts -------*/
+
+.bg-logo-burger-menu-mobile { background-color: #FFFFFF; display: block; left: 0; padding: 10px 15px; position: fixed; top: 0; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -ms-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; width: 100%; z-index: 3; }
+.header-logo-mobile > a { display: inline-block; }
+.header-logo-mobile > a > img { height: 46px; }
+
+	  /*------- Mobile Hamburger Menu Section Starts -------*/
+
+.burger-menu { background-color: transparent; cursor: pointer; height: 25px; position: relative; width: 25px; z-index: 2; }
+.burger-menu span { background-color: #1E1E1E; height: 2px; left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 0.5s ease 0.5s; -moz-transition: 0.5s ease 0.5s; -ms-transition: 0.5s ease 0.5s; -o-transition: 0.5s ease 0.5s; transition: 0.5s ease 0.5s; width: 25px; z-index: 2; }
+.burger-menu span::before,
+.burger-menu span::after { background-color: #000000; content: ""; display: block; height: 2px; position: absolute; top: 10px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 25px; z-index: 2; }
+.burger-menu span::before { top: -10px; }
+.burger-menu.active span { background-color: transparent; -webkit-transition: 0s ease; -moz-transition: 0s ease; -ms-transition: 0s ease; -o-transition: 0s ease; transition: 0s ease; }
+.burger-menu.active span::before { top: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.burger-menu.active span::after { top: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+	  /*------- Mobile Hamburger Menu Section Ends -------*/
+
+  /*------- Mobile Logo and Burger Menu Section Ends -------*/
+
+  /*------- Mobile Navbar Menu Section Starts -------*/
+
+.fixed-navbar-menu-mobile { background-color: #FFFFFF; display: block; height: 100%; left: 0; position: fixed; top: 0; -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -o-transform: translateY(-100%); transform: translateY(-100%); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; width: 100%; z-index: 4; }
+.fixed-navbar-menu-mobile.active { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
+.fixed-navbar-menu-mobile-close { background-color: #0382B7; position: fixed; right: 0; top: 0; z-index: 10; }
+.fixed-navbar-menu-mobile-close > i { color: #FFFFFF; display: block; font-size: 2.4rem; height: 44px; line-height: 44px; text-align: center; width: 44px; }
+.menu-listing-mobile { left: 50%; position: fixed; text-align: center; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 90%; z-index: 4; }
+.menu-listing-mobile > li { display: block; margin-bottom: 15px; }
+.menu-listing-mobile > li:last-child { margin-bottom: 0; }
+.menu-listing-mobile > li:nth-child(4) { margin-bottom: 30px; }
+.menu-listing-mobile > li > a { color: #1E1E1E; font: 2rem/1.2 "NunitoSans-SemiBold"; }
+.menu-listing-mobile > li.active > a,
+.menu-listing-mobile > li > a:hover { color: #0382B7; }
+.menu-listing-mobile > li.donate-now-li > a { background-color: #0382B7; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; color: #FFFFFF; display: block; font: 1.6rem/normal "NunitoSans-Bold"; padding: 16px 25px; text-align: center; text-transform: uppercase; }
+.menu-listing-mobile > li.donate-now-li > a:hover { background-color: #FFB800; color: #1E1E1E; }
+
+  /*------- Mobile Navbar Menu Section Ends -------*/
+
+  /*------- Desktop Header Section Starts -------*/
+
+.bg-header-desktop { display: none; }
+
+  /*------- Desktop Header Section Ends -------*/
+
+  /*------- Wrapper Section Starts -------*/
+
+.main-wrapper { margin-top: 70px; }
+
+  /*------- Wrapper Section Ends -------*/
+
+  /*------- Slider Section Starts -------*/
+
+.bg-banner-slider { padding: 0; }
+.box-banner { left: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 80%; }
+.box-banner > h1 { font-size: 3.6rem; }
+.banner-slick-slider .slick-slide img { height: 100vh; }
+
+  /*------- Slider Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.bg-about { padding: 130px 15px 30px; }
+.ohm-image-about { display: none; }
+.about-image-top { left: 0; top: -100px; }
+.about-image-center > img { width: 70%; }
+.about-image-bottom { bottom: -80px; right: 0; }
+.about-desc > p { text-align: justify; }
+
+  /*------- About Us Section Ends -------*/
+
+  /*------- Products Section Starts -------*/
+
+.btn-read-view-more-products { margin-top: 0; }
+
+  /*------- Products Section Ends -------*/
+
+  /*------- Extra Details Section Starts -------*/
+
+.bg-extra-details { padding: 30px 15px 0; }
+
+  /*------- Extra Details Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.footer-about-desc > p { margin-bottom: 20px; padding-right: 0; text-align: justify; }
+.footer-heading > h3 { font-size: 2rem; margin-bottom: 15px; }
+.quick-links-listing > li,
+.footer-contact-listing > li { margin-bottom: 10px; }
+
+  /*------- Footer Section Ends -------*/
+
+  /*------- Copyright Section Starts -------*/
+
+.copyright-info > p,
+.design-develop-by > p { text-align: center; }
+.copyright-info > p { margin-bottom: 10px; }
+
+  /*------- Copyright Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+/*------- About Us Page Starts -------*/
+
+  /*------- Inner Banner Section Starts -------*/
+
+.bg-inner-banner-ip { padding: 60px 15px; }
+
+	/*------- Inner Banner Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.about-desc-ap > p:last-child { margin-bottom: 0; }
+
+  /*------- About Us Section Ends -------*/
+
+  /*------- Vision and Mission Section Starts -------*/
+
+.bg-vision-mission-ap { padding: 20px 15px 0; }
+.vision-mission-section-heading > h2 { display: block; }
+.vision-mission-section-heading > h2 > img { height: 55px; margin-right: 5px; width: 55px; }
+.vision-mission-section-heading > h2 > span { margin-left: 0; }
+.vision-mission-info > p { margin-bottom: 30px; }
+
+	/*------- Vision and Mission Section Ends -------*/
+
+/*------- About Us Page Ends -------*/
+
+/*------- Products Page Starts -------*/
+
+  /*------- Products Section Starts -------*/
+
+.pagination-design { margin-top: 0; }
+
+  /*------- Products Section Ends -------*/
+
+/*------- Products Page Ends -------*/
+
+/*------- Product Details Page Starts -------*/
+
+  /*------- Product Details Section Starts -------*/
+
+.box-product-detail-heading > h3 { font-size: 2.2rem; }
+.box-product-detail-desc > p { text-align: justify; }
+
+  /*------- Product Details Section Ends -------*/
+
+/*------- Product Details Page Ends -------*/
+
+/*------- View Cart Page Starts -------*/
+
+  /*------- View Cart Section Starts -------*/
+
+.box-table-design-update-cart { margin-bottom: 30px; }
+
+  /*------- View Cart Section Ends -------*/
+
+/*------- View Cart Page Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
+
+  /*------- Contact Info and Map Section Starts -------*/
+
+.box-contact-info-cp { padding: 20px; }
+.box-contact-icon-cp { height: 70px; width: 70px; }
+.box-contact-icon-cp > i { font-size: 3rem; line-height: 70px; }
+.map-cp { height: 600px; }
+.bg-contact-form { padding-top: 0; }
+
+  /*------- Contact Info and Map Section Ends -------*/
+
+/*------- Contact Us Page Ends -------*/
+
+}
