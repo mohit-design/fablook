@@ -8,7 +8,6 @@ body.active { overflow: hidden; }
 .section-heading > div > img { display: block; }
 .section-heading > h2 { font-size: 2.4rem; margin-bottom: 20px; }
 .section-heading-ip > h1 { font-size: 3rem; }
-p { font-size: 1.6rem; }
 
 /*-------- Common CSS Ends -------*/
 
@@ -112,31 +111,22 @@ p { font-size: 1.6rem; }
 
   /*------- Products Section Ends -------*/
 
-  /*------- Extra Details Section Starts -------*/
-
-.bg-extra-details { padding: 20px 15px 0; }
-.box-extra-details { margin-bottom: 20px; }
-
-  /*------- Extra Details Section Ends -------*/
-
   /*------- Footer Section Starts -------*/
 
-.footer-about-desc > p { margin-bottom: 20px; padding-right: 0; text-align: justify; }
-.footer-heading > h3 { font-size: 2rem; margin-bottom: 15px; }
-.quick-links-listing > li,
-.footer-contact-listing > li { margin-bottom: 10px; }
-.quick-links-listing > li:last-child,
-.footer-contact-listing > li:last-child { margin-bottom: 20px; }
+.footer-logo > a > img { margin-bottom: 30px; width: 150px; }
+.footer-quick-links-listing { display: block; }
+.footer-quick-links-listing > li { margin: 0 0 15px 0; }
+.footer-quick-links-listing > li:last-child { margin-bottom: 0; }
+.footer-heading > h3 { font-size: 1.8rem; margin-bottom: 15px; }
+.footer-social-listing,
+.footer-contact-listing { margin-bottom: 20px; }
+.footer-contact-listing,
+.contact-information-footer-heading > h3 { text-align: left; }
+.footer-contact-listing { border-bottom: 1px solid #E91E63; padding-bottom: 20px; }
+.copyright-info > p,
+.design-develop-by > p { font-size: 1.6rem; text-align: left; }
 
   /*------- Footer Section Ends -------*/
-
-  /*------- Copyright Section Starts -------*/
-
-.copyright-info > p,
-.design-develop-by > p { font-size: 1.4rem; text-align: center; }
-.copyright-info > p { margin-bottom: 10px; }
-
-  /*------- Copyright Section Ends -------*/
 
 /*------- Home Page Ends -------*/
 
