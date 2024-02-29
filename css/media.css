@@ -122,9 +122,10 @@ body.active { overflow: hidden; }
 .footer-contact-listing { margin-bottom: 20px; }
 .footer-contact-listing,
 .contact-information-footer-heading > h3 { text-align: left; }
+.contact-information-footer-heading > h3 { margin-bottom: 10px; }
 .footer-contact-listing { border-bottom: 1px solid #E91E63; padding-bottom: 20px; }
 .copyright-info > p,
-.design-develop-by > p { font-size: 1.6rem; text-align: left; }
+.design-develop-by > p { font-size: 1.6rem; text-align: center; }
 
   /*------- Footer Section Ends -------*/
 
