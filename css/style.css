@@ -48,7 +48,7 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 
 /*-------- Common CSS Ends -------*/
 
-/*------- LogIn and SignUp Page Starts -------*/
+/*------- LogIn, SignUp, and Forgot Password Page Starts -------*/
 
 .bg-signup-login-fpwd { padding: 0; }
 .bg-signup-login-fpwd > .row { margin: 0; }
@@ -61,12 +61,12 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 .fpwd-box-contact-info { left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 75%; z-index: 1; }
 .login-box-contact-info { width: 50%; }
 .fpwd-box-contact-info { width: 50%; }
-.box-login-signup-image { text-align: center; }
-.box-login-signup-image > a { display: inline-block; }
-.box-login-signup-image > a > img { margin-bottom: 15px; width: 150px; }
-.box-login-signup-heading > h3 { color: #1E1E1E; font: 2.4rem/normal "Futura-Bold"; margin-bottom: 20px; text-align: center; }
-.box-login-signup-heading > p { line-height: normal; margin-bottom: 20px; text-align: center; }
-.form-group-signup-login { margin-bottom: 15px; }
+.box-login-signup-image-fpwd { text-align: center; }
+.box-login-signup-image-fpwd > a { display: inline-block; }
+.box-login-signup-image-fpwd > a > img { margin-bottom: 15px; width: 150px; }
+.box-login-signup-fpwd-heading > h3 { color: #1E1E1E; font: 2.4rem/normal "Futura-Bold"; margin-bottom: 20px; text-align: center; }
+.box-login-signup-fpwd-heading > p { line-height: normal; margin-bottom: 20px; text-align: center; }
+.form-group-signup-login-fpwd { margin-bottom: 15px; }
 .forget-password > a { color: #F26EBA; font-family: "Futura-Medium"; text-decoration: underline; }
 .forget-password > a:hover,
 .login-signup-redirection > a:hover { color: #1E1E1E; }
@@ -75,7 +75,7 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 .btn-cancel { background-color: #FFFFFF; border: 2px solid #E91E63; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; color: #E91E63; display: block; font: 1.6rem/normal "Futura-Medium"; letter-spacing: 0.5px; margin-top: 15px; padding: 14px 32px; text-align: center; text-transform: uppercase; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 100%; }
 .btn-cancel:hover { background-color: #E91E63; color: #FFFFFF; }
 
-/*------- LogIn and SignUp Page Ends -------*/
+/*------- LogIn, SignUp, and Forgot Password Page Ends -------*/
 
 /*------- Home Page Starts -------*/
 
@@ -91,10 +91,22 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 .bg-logo-add-to-cart-desktop { background-color: #FFFFFF; padding: 15px; }
 .header-logo-desktop > a { display: inline-block; }
 .header-logo-desktop > a > img { width: 100px; }
-.btn-add-to-cart > a { background-color: #FFFFFF; border: 2px solid #F26EBA; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; color: #F26EBA; display: inline-block; font: 1.6rem/normal "Futura-Medium"; position: relative; text-transform: uppercase; z-index: 1; }
-.btn-add-to-cart > a > i { background-color: #F26EBA; color: #FFFFFF; display: inline-block; padding: 17px; }
-.btn-add-to-cart > a > span.add-to-cart-span { display: inline-block; padding: 0 15px 0 10px; }
-.btn-add-to-cart > a > span.add-to-cart-span-value { background-color: #F26EBA; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; color: #FFFFFF; display: block; font: 1.6rem/normal "Futura-Medium"; height: 30px; line-height: 30px; outline: 4px solid #FFFFFF; position: absolute; right: -15px; text-align: center; top: -12px; width: 30px; z-index: 1; }
+.btn-add-to-cart { position: relative; z-index: 4; }
+.btn-add-to-cart > span { background-color: #FFFFFF; border: 2px solid #F26EBA; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; color: #F26EBA; cursor: pointer; display: inline-block; font: 1.6rem/normal "Futura-Medium"; position: relative; text-transform: uppercase; z-index: 4; }
+.btn-add-to-cart > span > i { background-color: #F26EBA; color: #FFFFFF; display: inline-block; padding: 17px; }
+.btn-add-to-cart > span > span.add-to-cart-span { display: inline-block; padding: 0 15px 0 10px; }
+.btn-add-to-cart > span > span.add-to-cart-span-value { background-color: #F26EBA; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; color: #FFFFFF; display: block; font: 1.6rem/normal "Futura-Medium"; height: 30px; line-height: 30px; outline: 4px solid #FFFFFF; position: absolute; right: -15px; text-align: center; top: -12px; width: 30px; z-index: 1; }
+.shopping-cart-listing-dropdown { background-color: #E91E63; display: none; max-height: 350px; min-width: 450px; overflow-y: auto; position: absolute; right: 0; top: 62px; z-index: 4; }
+.shopping-cart-listing-dropdown > li > .box-checkout-products { border-bottom: 2px solid #FFFFFF; }
+.shopping-cart-listing-dropdown > li:last-child > .box-checkout-products { border-bottom: 0; }
+.shopping-cart-listing-dropdown > li .box-checkout-products-image-name-qty > div > h4 { color: #FFFFFF; text-align: left; }
+.shopping-cart-listing-dropdown > li .box-checkout-products-image-name-qty > div > p { color: #F7F7F7; }
+.shopping-cart-listing-dropdown > li:last-child { background-color: #E91E63; bottom: 0; padding: 15px; position: sticky; }
+.shopping-cart-listing-dropdown > li .box-checkout-products-amt > p { align-items: center; color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: flex; justify-content: flex-end; line-height: normal; }
+.shopping-cart-listing-dropdown > li .box-checkout-products-amt > p > i { color: #FFFFFF; cursor: pointer; padding-left: 10px; }
+.shopping-cart-listing-dropdown > li .box-checkout-products-amt > p > i:hover { color: #FFB800; }
+.btn-proceed-to-checkout-white { background-color: #FFFFFF; border: 0; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; color: #1E1E1E; display: block; font: 1.6rem/normal "Futura-Medium"; letter-spacing: 0.5px; padding: 16px 32px; text-align: center; text-transform: uppercase; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 100%; }
+.btn-proceed-to-checkout-white:hover { background-color: #1E1E1E; color: #FFFFFF; }
 
   /*------- Logo and Add to Cart Button Section Ends -------*/
 
@@ -394,7 +406,7 @@ textarea.form-control-contact { min-height: 140px; resize: none; }
 .box-checkout-products { border-bottom: 2px solid #1E1E1E; padding: 15px; }
 .box-checkout-products + .box-checkout-products { border-top: 0; }
 .box-checkout-products-image-name-qty { align-items: start; display: -webkit-box; display: -webkit-flex; display: flex; }
-.box-checkout-products-image-name-qty > img { margin-right: 10px; width: 70px; }
+.box-checkout-products-image-name-qty > img { border: 2px solid #1E1E1E; margin-right: 10px; padding: 5px; width: 70px; }
 .box-checkout-products-image-name-qty > div > h4 { color: #1E1E1E; font: 1.8rem/normal "Futura-Medium"; }
 .box-checkout-products-image-name-qty > div > p { color: #1E1E1E; font-family: "Futura-Book"; }
 .box-checkout-products-amt > p { color: #1E1E1E; font-family: "Futura-Medium"; font-weight: bold; text-align: right; }

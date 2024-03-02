@@ -25,14 +25,17 @@ body.active { overflow: hidden; }
 
 .bg-logo-burger-menu-mobile { background-color: #FFFFFF; display: block; left: 0; padding: 10px 15px; position: fixed; top: 0; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -ms-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; width: 100%; z-index: 3; }
 .header-logo-mobile > a { display: inline-block; }
-.header-logo-mobile > a > img { height: 46px; }
+.header-logo-mobile > a > img { height: 30px; }
+.btn-add-to-cart > span > span.add-to-cart-span { display: none; }
+.btn-add-to-cart > span > i { padding: 10px; }
+.btn-add-to-cart > span > span.add-to-cart-span-value { font-size: 1.2rem; height: 25px; line-height: 25px; width: 25px; right: -20px; top: -10px; }
 
 	  /*------- Mobile Hamburger Menu Section Starts -------*/
 
 .burger-menu { background-color: transparent; cursor: pointer; height: 25px; position: relative; width: 25px; z-index: 2; }
 .burger-menu span { background-color: #1E1E1E; height: 2px; left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 0.5s ease 0.5s; -moz-transition: 0.5s ease 0.5s; -ms-transition: 0.5s ease 0.5s; -o-transition: 0.5s ease 0.5s; transition: 0.5s ease 0.5s; width: 25px; z-index: 2; }
 .burger-menu span::before,
-.burger-menu span::after { background-color: #000000; content: ""; display: block; height: 2px; position: absolute; top: 10px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 25px; z-index: 2; }
+.burger-menu span::after { background-color: #1E1E1E; content: ""; display: block; height: 2px; position: absolute; top: 10px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 25px; z-index: 2; }
 .burger-menu span::before { top: -10px; }
 .burger-menu.active span { background-color: transparent; -webkit-transition: 0s ease; -moz-transition: 0s ease; -ms-transition: 0s ease; -o-transition: 0s ease; transition: 0s ease; }
 .burger-menu.active span::before { top: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
@@ -44,32 +47,37 @@ body.active { overflow: hidden; }
 
   /*------- Mobile Navbar Menu Section Starts -------*/
 
-.fixed-navbar-menu-mobile { background-color: #FFFFFF; display: block; height: 100%; left: 0; position: fixed; top: 0; -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -o-transform: translateY(-100%); transform: translateY(-100%); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; width: 100%; z-index: 4; }
-.fixed-navbar-menu-mobile.active { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
-.fixed-navbar-menu-mobile-close { background-color: #0382B7; position: fixed; right: 0; top: 0; z-index: 10; }
+.fixed-navbar-menu-mobile { background-color: #FFFFFF; display: block; height: 100%; left: 0; position: fixed; top: 0; -webkit-transform: translateX(-100%); -moz-transform: translateX(-100%); -ms-transform: translateX(-100%); -o-transform: translateX(-100%); transform: translateX(-100%); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; width: 100%; z-index: 4; }
+.fixed-navbar-menu-mobile.active { -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+.fixed-navbar-menu-mobile-close { background-color: #E91E63; position: fixed; right: 0; top: 0; z-index: 10; }
 .fixed-navbar-menu-mobile-close > i { color: #FFFFFF; display: block; font-size: 2.4rem; height: 44px; line-height: 44px; text-align: center; width: 44px; }
 .menu-listing-mobile { left: 50%; position: fixed; text-align: center; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 90%; z-index: 4; }
 .menu-listing-mobile > li { display: block; margin-bottom: 15px; }
 .menu-listing-mobile > li:last-child { margin-bottom: 0; }
 .menu-listing-mobile > li:nth-child(4) { margin-bottom: 30px; }
-.menu-listing-mobile > li > a { color: #1E1E1E; font: 2rem/1.2 "NunitoSans-SemiBold"; }
+.menu-listing-mobile > li > a { color: #1E1E1E; font: 2rem/1.2 "Futura-Medium"; }
 .menu-listing-mobile > li.active > a,
-.menu-listing-mobile > li > a:hover { color: #0382B7; }
-.menu-listing-mobile > li.donate-now-li > a { background-color: #0382B7; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; color: #FFFFFF; display: block; font: 1.6rem/normal "NunitoSans-Bold"; padding: 16px 25px; text-align: center; text-transform: uppercase; }
-.menu-listing-mobile > li.donate-now-li > a:hover { background-color: #FFB800; color: #1E1E1E; }
+.menu-listing-mobile > li > a:hover { color: #E91E63; }
 
   /*------- Mobile Navbar Menu Section Ends -------*/
 
   /*------- Desktop Header Section Starts -------*/
 
 .bg-header-desktop { display: none; }
-.shopping-cart-listing-dropdown { min-width: 100%; right: -85px; top: 47px; z-index: 2; }
+.shopping-cart-listing-dropdown { min-width: 100%; right: -85px; top: 60px; z-index: 2; }
 
   /*------- Desktop Header Section Ends -------*/
 
+  /*------- Logo and Add to Cart Button Section Starts -------*/
+
+.bg-logo-add-to-cart-desktop,
+.bg-menu-listing-login-signup-desktop { display: none; }
+
+  /*------- Logo and Add to Cart Button Section Ends -------*/
+
   /*------- Wrapper Section Starts -------*/
 
-.main-wrapper { margin-top: 70px; }
+.main-wrapper { margin-top: 60px; }
 
   /*------- Wrapper Section Ends -------*/
 
@@ -234,14 +242,17 @@ p { font-size: 1.6rem; }
 
 .bg-logo-burger-menu-mobile { background-color: #FFFFFF; display: block; left: 0; padding: 10px 15px; position: fixed; top: 0; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -ms-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; width: 100%; z-index: 3; }
 .header-logo-mobile > a { display: inline-block; }
-.header-logo-mobile > a > img { height: 46px; }
+.header-logo-mobile > a > img { height: 30px; }
+.btn-add-to-cart > span > span.add-to-cart-span { display: none; }
+.btn-add-to-cart > span > i { padding: 10px; }
+.btn-add-to-cart > span > span.add-to-cart-span-value { font-size: 1.2rem; height: 25px; line-height: 25px; width: 25px; right: -20px; top: -10px; }
 
 	  /*------- Mobile Hamburger Menu Section Starts -------*/
 
 .burger-menu { background-color: transparent; cursor: pointer; height: 25px; position: relative; width: 25px; z-index: 2; }
 .burger-menu span { background-color: #1E1E1E; height: 2px; left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 0.5s ease 0.5s; -moz-transition: 0.5s ease 0.5s; -ms-transition: 0.5s ease 0.5s; -o-transition: 0.5s ease 0.5s; transition: 0.5s ease 0.5s; width: 25px; z-index: 2; }
 .burger-menu span::before,
-.burger-menu span::after { background-color: #000000; content: ""; display: block; height: 2px; position: absolute; top: 10px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 25px; z-index: 2; }
+.burger-menu span::after { background-color: #1E1E1E; content: ""; display: block; height: 2px; position: absolute; top: 10px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 25px; z-index: 2; }
 .burger-menu span::before { top: -10px; }
 .burger-menu.active span { background-color: transparent; -webkit-transition: 0s ease; -moz-transition: 0s ease; -ms-transition: 0s ease; -o-transition: 0s ease; transition: 0s ease; }
 .burger-menu.active span::before { top: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
@@ -253,31 +264,37 @@ p { font-size: 1.6rem; }
 
   /*------- Mobile Navbar Menu Section Starts -------*/
 
-.fixed-navbar-menu-mobile { background-color: #FFFFFF; display: block; height: 100%; left: 0; position: fixed; top: 0; -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -o-transform: translateY(-100%); transform: translateY(-100%); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; width: 100%; z-index: 4; }
-.fixed-navbar-menu-mobile.active { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
-.fixed-navbar-menu-mobile-close { background-color: #0382B7; position: fixed; right: 0; top: 0; z-index: 10; }
+.fixed-navbar-menu-mobile { background-color: #FFFFFF; display: block; height: 100%; left: 0; position: fixed; top: 0; -webkit-transform: translateX(-100%); -moz-transform: translateX(-100%); -ms-transform: translateX(-100%); -o-transform: translateX(-100%); transform: translateX(-100%); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; width: 100%; z-index: 4; }
+.fixed-navbar-menu-mobile.active { -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+.fixed-navbar-menu-mobile-close { background-color: #E91E63; position: fixed; right: 0; top: 0; z-index: 10; }
 .fixed-navbar-menu-mobile-close > i { color: #FFFFFF; display: block; font-size: 2.4rem; height: 44px; line-height: 44px; text-align: center; width: 44px; }
 .menu-listing-mobile { left: 50%; position: fixed; text-align: center; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 90%; z-index: 4; }
 .menu-listing-mobile > li { display: block; margin-bottom: 15px; }
 .menu-listing-mobile > li:last-child { margin-bottom: 0; }
 .menu-listing-mobile > li:nth-child(4) { margin-bottom: 30px; }
-.menu-listing-mobile > li > a { color: #1E1E1E; font: 2rem/1.2 "NunitoSans-SemiBold"; }
+.menu-listing-mobile > li > a { color: #1E1E1E; font: 2rem/1.2 "Futura-Medium"; }
 .menu-listing-mobile > li.active > a,
-.menu-listing-mobile > li > a:hover { color: #0382B7; }
-.menu-listing-mobile > li.donate-now-li > a { background-color: #0382B7; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; color: #FFFFFF; display: block; font: 1.6rem/normal "NunitoSans-Bold"; padding: 16px 25px; text-align: center; text-transform: uppercase; }
-.menu-listing-mobile > li.donate-now-li > a:hover { background-color: #FFB800; color: #1E1E1E; }
+.menu-listing-mobile > li > a:hover { color: #E91E63; }
 
   /*------- Mobile Navbar Menu Section Ends -------*/
 
   /*------- Desktop Header Section Starts -------*/
 
 .bg-header-desktop { display: none; }
+.shopping-cart-listing-dropdown { min-width: 100%; right: -85px; top: 60px; z-index: 2; }
 
   /*------- Desktop Header Section Ends -------*/
 
+  /*------- Logo and Add to Cart Button Section Starts -------*/
+
+.bg-logo-add-to-cart-desktop,
+.bg-menu-listing-login-signup-desktop { display: none; }
+
+  /*------- Logo and Add to Cart Button Section Ends -------*/
+
   /*------- Wrapper Section Starts -------*/
 
-.main-wrapper { margin-top: 70px; }
+.main-wrapper { margin-top: 60px; }
 
   /*------- Wrapper Section Ends -------*/
 
@@ -430,56 +447,17 @@ body.active { overflow: hidden; }
 
 /*------- Home Page Starts -------*/
 
-  /*------- Mobile Logo and Burger Menu Section Starts -------*/
+  /*------- Logo and Add to Cart Button Section Starts -------*/
 
-.bg-logo-burger-menu-mobile { background-color: #FFFFFF; display: block; left: 0; padding: 10px 15px; position: fixed; top: 0; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -ms-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; width: 100%; z-index: 3; }
-.header-logo-mobile > a { display: inline-block; }
-.header-logo-mobile > a > img { height: 46px; }
+.bg-logo-add-to-cart-desktop { padding: 15px; }
 
-	  /*------- Mobile Hamburger Menu Section Starts -------*/
+  /*------- Logo and Add to Cart Button Section Ends -------*/
 
-.burger-menu { background-color: transparent; cursor: pointer; height: 25px; position: relative; width: 25px; z-index: 2; }
-.burger-menu span { background-color: #1E1E1E; height: 2px; left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 0.5s ease 0.5s; -moz-transition: 0.5s ease 0.5s; -ms-transition: 0.5s ease 0.5s; -o-transition: 0.5s ease 0.5s; transition: 0.5s ease 0.5s; width: 25px; z-index: 2; }
-.burger-menu span::before,
-.burger-menu span::after { background-color: #000000; content: ""; display: block; height: 2px; position: absolute; top: 10px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 25px; z-index: 2; }
-.burger-menu span::before { top: -10px; }
-.burger-menu.active span { background-color: transparent; -webkit-transition: 0s ease; -moz-transition: 0s ease; -ms-transition: 0s ease; -o-transition: 0s ease; transition: 0s ease; }
-.burger-menu.active span::before { top: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-.burger-menu.active span::after { top: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+  /*------- Menu Listing and LogIn and SignUp Button Section Starts -------*/
 
-	  /*------- Mobile Hamburger Menu Section Ends -------*/
+.bg-menu-listing-login-signup-desktop { padding: 0 15px; }
 
-  /*------- Mobile Logo and Burger Menu Section Ends -------*/
-
-  /*------- Mobile Navbar Menu Section Starts -------*/
-
-.fixed-navbar-menu-mobile { background-color: #FFFFFF; display: block; height: 100%; left: 0; position: fixed; top: 0; -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -o-transform: translateY(-100%); transform: translateY(-100%); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; width: 100%; z-index: 4; }
-.fixed-navbar-menu-mobile.active { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
-.fixed-navbar-menu-mobile-close { background-color: #0382B7; position: fixed; right: 0; top: 0; z-index: 10; }
-.fixed-navbar-menu-mobile-close > i { color: #FFFFFF; display: block; font-size: 2.4rem; height: 44px; line-height: 44px; text-align: center; width: 44px; }
-.menu-listing-mobile { left: 50%; position: fixed; text-align: center; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 90%; z-index: 4; }
-.menu-listing-mobile > li { display: block; margin-bottom: 15px; }
-.menu-listing-mobile > li:last-child { margin-bottom: 0; }
-.menu-listing-mobile > li:nth-child(4) { margin-bottom: 30px; }
-.menu-listing-mobile > li > a { color: #1E1E1E; font: 2rem/1.2 "NunitoSans-SemiBold"; }
-.menu-listing-mobile > li.active > a,
-.menu-listing-mobile > li > a:hover { color: #0382B7; }
-.menu-listing-mobile > li.donate-now-li > a { background-color: #0382B7; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; color: #FFFFFF; display: block; font: 1.6rem/normal "NunitoSans-Bold"; padding: 16px 25px; text-align: center; text-transform: uppercase; }
-.menu-listing-mobile > li.donate-now-li > a:hover { background-color: #FFB800; color: #1E1E1E; }
-
-  /*------- Mobile Navbar Menu Section Ends -------*/
-
-  /*------- Desktop Header Section Starts -------*/
-
-.bg-header-desktop { display: none; }
-
-  /*------- Desktop Header Section Ends -------*/
-
-  /*------- Wrapper Section Starts -------*/
-
-.main-wrapper { margin-top: 70px; }
-
-  /*------- Wrapper Section Ends -------*/
+  /*------- Menu Listing and LogIn and SignUp Button Section Ends -------*/
 
   /*------- Slider Section Starts -------*/
 
@@ -623,56 +601,17 @@ body.active { overflow: hidden; }
 
 /*------- Home Page Starts -------*/
 
-  /*------- Mobile Logo and Burger Menu Section Starts -------*/
+  /*------- Logo and Add to Cart Button Section Starts -------*/
 
-.bg-logo-burger-menu-mobile { background-color: #FFFFFF; display: block; left: 0; padding: 10px 15px; position: fixed; top: 0; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -ms-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; width: 100%; z-index: 3; }
-.header-logo-mobile > a { display: inline-block; }
-.header-logo-mobile > a > img { height: 46px; }
+.bg-logo-add-to-cart-desktop { padding: 15px; }
 
-	  /*------- Mobile Hamburger Menu Section Starts -------*/
+  /*------- Logo and Add to Cart Button Section Ends -------*/
 
-.burger-menu { background-color: transparent; cursor: pointer; height: 25px; position: relative; width: 25px; z-index: 2; }
-.burger-menu span { background-color: #1E1E1E; height: 2px; left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 0.5s ease 0.5s; -moz-transition: 0.5s ease 0.5s; -ms-transition: 0.5s ease 0.5s; -o-transition: 0.5s ease 0.5s; transition: 0.5s ease 0.5s; width: 25px; z-index: 2; }
-.burger-menu span::before,
-.burger-menu span::after { background-color: #000000; content: ""; display: block; height: 2px; position: absolute; top: 10px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 25px; z-index: 2; }
-.burger-menu span::before { top: -10px; }
-.burger-menu.active span { background-color: transparent; -webkit-transition: 0s ease; -moz-transition: 0s ease; -ms-transition: 0s ease; -o-transition: 0s ease; transition: 0s ease; }
-.burger-menu.active span::before { top: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-.burger-menu.active span::after { top: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+  /*------- Menu Listing and LogIn and SignUp Button Section Starts -------*/
 
-	  /*------- Mobile Hamburger Menu Section Ends -------*/
+.bg-menu-listing-login-signup-desktop { padding: 0 15px; }
 
-  /*------- Mobile Logo and Burger Menu Section Ends -------*/
-
-  /*------- Mobile Navbar Menu Section Starts -------*/
-
-.fixed-navbar-menu-mobile { background-color: #FFFFFF; display: block; height: 100%; left: 0; position: fixed; top: 0; -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -o-transform: translateY(-100%); transform: translateY(-100%); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; width: 100%; z-index: 4; }
-.fixed-navbar-menu-mobile.active { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
-.fixed-navbar-menu-mobile-close { background-color: #0382B7; position: fixed; right: 0; top: 0; z-index: 10; }
-.fixed-navbar-menu-mobile-close > i { color: #FFFFFF; display: block; font-size: 2.4rem; height: 44px; line-height: 44px; text-align: center; width: 44px; }
-.menu-listing-mobile { left: 50%; position: fixed; text-align: center; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 90%; z-index: 4; }
-.menu-listing-mobile > li { display: block; margin-bottom: 15px; }
-.menu-listing-mobile > li:last-child { margin-bottom: 0; }
-.menu-listing-mobile > li:nth-child(4) { margin-bottom: 30px; }
-.menu-listing-mobile > li > a { color: #1E1E1E; font: 2rem/1.2 "NunitoSans-SemiBold"; }
-.menu-listing-mobile > li.active > a,
-.menu-listing-mobile > li > a:hover { color: #0382B7; }
-.menu-listing-mobile > li.donate-now-li > a { background-color: #0382B7; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; color: #FFFFFF; display: block; font: 1.6rem/normal "NunitoSans-Bold"; padding: 16px 25px; text-align: center; text-transform: uppercase; }
-.menu-listing-mobile > li.donate-now-li > a:hover { background-color: #FFB800; color: #1E1E1E; }
-
-  /*------- Mobile Navbar Menu Section Ends -------*/
-
-  /*------- Desktop Header Section Starts -------*/
-
-.bg-header-desktop { display: none; }
-
-  /*------- Desktop Header Section Ends -------*/
-
-  /*------- Wrapper Section Starts -------*/
-
-.main-wrapper { margin-top: 70px; }
-
-  /*------- Wrapper Section Ends -------*/
+  /*------- Menu Listing and LogIn and SignUp Button Section Ends -------*/
 
   /*------- Slider Section Starts -------*/
 
