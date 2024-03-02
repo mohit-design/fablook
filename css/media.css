@@ -117,8 +117,8 @@ body.active { overflow: hidden; }
 .footer-quick-links-listing { display: block; }
 .footer-quick-links-listing > li { margin: 0 0 15px 0; }
 .footer-quick-links-listing > li:last-child { margin-bottom: 0; }
-.footer-heading > h3 { font-size: 1.8rem; margin-bottom: 15px; }
-.footer-social-listing,
+.footer-heading > h3 { font-size: 2rem; margin-bottom: 15px; }
+.footer-social-listing { margin-bottom: 25px; }
 .footer-contact-listing { margin-bottom: 20px; }
 .footer-contact-listing,
 .contact-information-footer-heading > h3 { text-align: left; }

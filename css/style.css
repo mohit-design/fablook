@@ -2,7 +2,7 @@
 
 @font-face { font-family: "Futura-Book"; src: url("../fonts/Futura-Book.otf"); }
 @font-face { font-family: "Futura-Medium"; src: url("../fonts/Futura-Medium.otf"); }
-@font-face { font-family: "Futura-Heavy"; src: url("../fonts/Futura-Heavy.otf"); }
+@font-face { font-family: "Futura-Bold"; src: url("../fonts/Futura-Bold.otf"); }
 
 /*-------- Font Family Ends -------*/
 
@@ -29,9 +29,9 @@ li { list-style: none; }
 .row { margin: 0 -15px; }
 .row [class^=col] { padding: 0 15px; }
 .section-heading > div { color: #1E1E1E; font: 2rem/normal "Futura-Book"; margin-bottom: 10px; }
-.section-heading > h2 { color: #1E1E1E; font: 3.6rem/normal "Futura-Heavy"; margin-bottom: 50px; }
+.section-heading > h2 { color: #1E1E1E; font: 3.6rem/normal "Futura-Bold"; margin-bottom: 50px; }
 .section-heading > h2 > span { color: #F26EBA; }
-.section-heading-ip > h1 { color: #FFFFFF; font: 4rem/1.2 "Medium"; margin-bottom: 5px; padding-bottom: 10px; position: relative; text-align: center; text-transform: uppercase; z-index: 1; }
+.section-heading-ip > h1 { color: #FFFFFF; font: 4rem/1.2 "Futura-Bold"; margin-bottom: 5px; padding-bottom: 10px; position: relative; text-align: center; text-transform: uppercase; z-index: 1; }
 .section-heading-ip > h1::after { background-color: #fff; bottom: 0; content: ""; display: block; height: 2px; left: 50%; position: absolute; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); width: 100px; z-index: -1; }
 p { color: #444444; font: 1.8rem/1.7 "Futura-Book"; }
 .btn-primary > a { background: linear-gradient(#F26EBA, #FD7863); align-items: center; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; color: #FFFFFF; display: inline-flex; font: 1.6rem/normal "Futura-Medium"; letter-spacing: 0.75px; padding: 17px 34px; text-align: center; text-transform: uppercase; }
@@ -50,16 +50,30 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 
 /*------- LogIn and SignUp Page Starts -------*/
 
-.box-login-signup { background-color: #F7F7F7; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; padding: 30px; }
-.box-login-signup-heading > h3 { color: #002332; font: 2.4rem/normal "Medium"; margin-bottom: 15px; text-align: center; }
-.box-login-signup-heading > p { margin-bottom: 30px; text-align: center; }
+.bg-signup-login-fpwd { padding: 0; }
+.bg-signup-login-fpwd > .row { margin: 0; }
+.bg-signup-login-fpwd > .row > [class*="col-"] { padding: 0; }
+.col-height-relative-1,
+.col-height-relative-2 { height: 100vh; position: relative; z-index: 1; }
+.bg-signup-login-fpwd-banner { background: url("../images/login-banner.jpg") no-repeat top/cover; height: 100vh; }
+.signup-box-contact-info,
+.login-box-contact-info,
+.fpwd-box-contact-info { left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 75%; z-index: 1; }
+.login-box-contact-info { width: 50%; }
+.fpwd-box-contact-info { width: 50%; }
+.box-login-signup-image { text-align: center; }
+.box-login-signup-image > a { display: inline-block; }
+.box-login-signup-image > a > img { margin-bottom: 15px; width: 150px; }
+.box-login-signup-heading > h3 { color: #1E1E1E; font: 2.4rem/normal "Futura-Bold"; margin-bottom: 20px; text-align: center; }
+.box-login-signup-heading > p { line-height: normal; margin-bottom: 20px; text-align: center; }
+.form-group-signup-login { margin-bottom: 15px; }
 .forget-password > a { color: #F26EBA; font-family: "Futura-Medium"; text-decoration: underline; }
 .forget-password > a:hover,
-.login-signup-redirection > a:hover { color: #002332; }
-.login-signup-redirection { color: #002332; font-family: "Futura-Medium"; text-align: center; }
+.login-signup-redirection > a:hover { color: #1E1E1E; }
+.login-signup-redirection { color: #1E1E1E; font-family: "Futura-Medium"; text-align: center; }
 .login-signup-redirection > a { color: #F26EBA; text-decoration: underline; }
-.btn-cancel { background-color: #DC143C; border: 2px solid #DC143C; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; color: #FFFFFF; display: block; font: 1.6rem/normal "Futura-Medium"; letter-spacing: 0.5px; margin-top: 15px; padding: 14px 32px; text-align: center; text-transform: uppercase; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 100%; }
-.btn-cancel:hover { background-color: transparent; color: #DC143C; }
+.btn-cancel { background-color: #FFFFFF; border: 2px solid #E91E63; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; color: #E91E63; display: block; font: 1.6rem/normal "Futura-Medium"; letter-spacing: 0.5px; margin-top: 15px; padding: 14px 32px; text-align: center; text-transform: uppercase; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 100%; }
+.btn-cancel:hover { background-color: #E91E63; color: #FFFFFF; }
 
 /*------- LogIn and SignUp Page Ends -------*/
 
@@ -77,9 +91,10 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 .bg-logo-add-to-cart-desktop { background-color: #FFFFFF; padding: 15px; }
 .header-logo-desktop > a { display: inline-block; }
 .header-logo-desktop > a > img { width: 100px; }
-.btn-add-to-cart > a { background-color: #FFFFFF; border: 2px solid #F26EBA; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; color: #F26EBA; display: inline-block; font: 1.6rem/normal "Futura-Medium"; text-transform: uppercase; }
+.btn-add-to-cart > a { background-color: #FFFFFF; border: 2px solid #F26EBA; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; color: #F26EBA; display: inline-block; font: 1.6rem/normal "Futura-Medium"; position: relative; text-transform: uppercase; z-index: 1; }
 .btn-add-to-cart > a > i { background-color: #F26EBA; color: #FFFFFF; display: inline-block; padding: 17px; }
-.btn-add-to-cart > a > span { display: inline-block; padding: 0 15px 0 10px; }
+.btn-add-to-cart > a > span.add-to-cart-span { display: inline-block; padding: 0 15px 0 10px; }
+.btn-add-to-cart > a > span.add-to-cart-span-value { background-color: #F26EBA; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; color: #FFFFFF; display: block; font: 1.6rem/normal "Futura-Medium"; height: 30px; line-height: 30px; outline: 4px solid #FFFFFF; position: absolute; right: -15px; text-align: center; top: -12px; width: 30px; z-index: 1; }
 
   /*------- Logo and Add to Cart Button Section Ends -------*/
 
@@ -121,7 +136,7 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 	width: 100%;
 	z-index: 1;
 }
-.box-banner { background-color: #FFFFFF; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; left: auto; padding: 30px; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); width: 35%; z-index: 1; }
+.box-banner { background-color: #FFFFFF; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; left: auto; padding: 30px; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); width: 35%; z-index: 1; }
 .box-banner > h1 { color: #1E1E1E; font: 4rem/normal "Futura-Medium"; margin-bottom: 25px; }
 .box-banner > h1 > span { color: #F26EBA; }
 .box-banner > p { margin-bottom: 15px; }
@@ -156,13 +171,17 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 
   /*------- About Us Section Starts -------*/
 
-.bg-about { position: relative; z-index: 1; }
-.bg-about::before { background: url("../images/about.jpg") no-repeat top/cover; content: ""; display: block; height: 75%; left: 0; position: absolute; top: 0; width: 100%; z-index: -1; }
+.bg-about,
+.bg-about-ap { position: relative; z-index: 1; }
+.bg-about::before,
+.bg-about-ap::before { background: url("../images/about.jpg") no-repeat top/cover; content: ""; display: block; height: 75%; left: 0; position: absolute; top: 0; width: 100%; z-index: -1; }
+.bg-about-ap::before { height: 100%; }
 .about-image-bottom-right { bottom: 50px; position: absolute; right: 0; z-index: 1; }
 .about-image-bottom-right > img { width: 400px; }
-.about-image > img { width: 100%; }
+.about-image > img { -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; width: 100%; }
 .about-info { margin-left: 20px; }
 .about-desc > p { margin-bottom: 30px; }
+.about-desc-ap > p:last-child { margin-bottom: 0; }
 
   /*------- About Us Section Ends -------*/
 
@@ -186,7 +205,7 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 .box-testimonials-slick-slider-profile-image > img { border: 1px solid #F26EBA; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; margin: 0 auto 30px; padding: 15px; width: 190px; }
 .box-testimonials-slick-slider-desc > p { margin-bottom: 30px; padding: 0 150px; text-align: center; }
 .box-testimonials-slick-slider-quote-image > img { margin: 0 auto 30px; width: 140px; }
-.box-testimonials-slick-slider-person-info > h3 { color: #F26EBA; font: 2.4rem/normal "Futura-Heavy"; margin-bottom: 5px; text-align: center; }
+.box-testimonials-slick-slider-person-info > h3 { color: #F26EBA; font: 2.4rem/normal "Futura-Bold"; margin-bottom: 5px; text-align: center; }
 .box-testimonials-slick-slider-person-info > p { text-align: center; }
 .testimonials-slick-slider .slick-prev,
 .testimonials-slick-slider .slick-next { background-color: #F26EBA; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; height: 50px; width: 50px; z-index: 1; }
@@ -218,7 +237,7 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 .footer-quick-links-listing > li > a { color: #1E1E1E; font: 1.8rem/normal "Futura-Book"; }
 .footer-quick-links-listing > li > a:hover { color: #E91E63; }
 .bg-footer-2 { background-color: rgb(253 61 107 / 10%); border-top: 1px solid #F26EBA; }
-.footer-heading > h3 { color: #1E1E1E; font: 2.2rem/1.4 "Futura-Heavy"; margin-bottom: 20px; text-transform: uppercase; }
+.footer-heading > h3 { color: #1E1E1E; font: 2.2rem/1.4 "Futura-Bold"; margin-bottom: 20px; text-transform: uppercase; }
 .footer-heading > h3 > span { color: #F26EBA; }
 .footer-social-listing > li { margin-right: 15px; }
 .footer-social-listing > li:last-child { margin-right: 0; }
@@ -246,17 +265,18 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 
   /*------- Inner Banner Section Starts -------*/
 
-.bg-inner-banner-ip { background: url("../images/banner-ip.jpg") no-repeat bottom/cover; padding: 100px 15px; position: relative; z-index: 1; }
+.bg-inner-banner-ip { background: url("../images/banner-ip.jpg") no-repeat 100% 20%/cover; padding: 100px 15px; position: relative; z-index: 1; }
+.bg-inner-banner-ip::before { background-color: rgb(0 0 0 / 40%); content: ""; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: -1; }
 
 	/*------- Inner Banner Section Ends -------*/
 
-  /*------- Vision and Mission Section Starts -------*/
+  /*------- Offer Section Starts -------*/
 
-.vision-mission-section-heading > h2 { align-items: center; display: flex; }
-.vision-mission-section-heading > h2 > img { background-color: #F26EBA; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; height: 60px; margin-right: 10px; padding: 10px; width: 60px; }
-.vision-mission-section-heading > h2 > span { margin-left: 10px; }
+.box-offer-ap { text-align: center; }
+.box-offer-ap > img { margin-bottom: 20px; width: 70px; }
+.box-offer-ap > p { font-family: "Futura-Medium"; font-size: 2rem; text-align: center; }
 
-	/*------- Vision and Mission Section Ends -------*/
+	/*------- Offer Section Ends -------*/
 
 /*------- About Us Page Ends -------*/
 
@@ -264,14 +284,14 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 
   /*------- Products Section Starts -------*/
 
-.bg-products-pp { background-color: rgb(3 130 183 / 10%); padding: 70px 15px 40px; }
+.bg-products-pp { background-color: rgb(242 110 186 / 10%); padding: 70px 15px 40px; }
 .pagination-design { margin-top: 20px; }
-.pagination-design > li > a.page-link { border: 2px solid #002332; color: #002332; font: 1.6rem/normal "Futura-Medium"; }
+.pagination-design > li > a.page-link { border: 2px solid #1E1E1E; color: #1E1E1E; font: 1.6rem/normal "Futura-Medium"; }
 .pagination-design > li.page-item:not(:first-child) .page-link { margin-left: calc(var(--bs-border-width) * -2); }
 .pagination-design > li.active > a.page-link,
-.pagination-design > li.active > a.page-link:hover { background-color: #002332; border-color: #002332; color: #FFFFFF; }
+.pagination-design > li.active > a.page-link:hover { background-color: #1E1E1E; border-color: #1E1E1E; color: #FFFFFF; }
 .pagination-design > li.page-item.disabled { cursor: not-allowed; }
-.pagination-design > li > a.page-link:hover { background-color: rgb(0 35 50 / 20%); }
+.pagination-design > li > a.page-link:hover { background-color: rgb(242 110 186 / 10%); }
 .pagination-design > li > a.page-link:focus { box-shadow: none; }
 
   /*------- Products Section Ends -------*/
@@ -282,24 +302,26 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 
   /*------- Product Details Section Starts -------*/
 
-.box-product-detail-image > img { -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; }
-.box-product-detail-heading > h3 { color: #F26EBA; font: 2.4rem/normal "Medium"; margin-bottom: 10px; }
+.box-product-detail-image { border: 2px solid #1E1E1E; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; padding: 50px; text-align: center; }
+.box-product-detail-image > img { -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; }
+.box-product-detail-heading > h3 { color: #1E1E1E; font: 2.4rem/normal "Futura-Bold"; margin-bottom: 15px; }
 .box-product-detail-desc > p { margin-bottom: 15px; }
-.box-product-detail-price > h4 { color: #F26EBA; font: 2rem/normal "Futura-Medium"; margin-bottom: 15px; }
-.quantity-pdp { -webkit-align-items: center; align-items: center; border: 2px solid #002332; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; }
+.box-product-detail-sub-heading > h4 { color: #E91E63; font: 2rem/normal "Futura-Bold"; margin-bottom: 15px; }
+.box-product-detail-sub-heading-value > h4 { color: #1E1E1E; font: 2rem/normal "Futura-Medium"; margin-bottom: 15px; }
+.quantity-pdp { -webkit-align-items: center; align-items: center; border: 2px solid #1E1E1E; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; }
 .quantity-pdp > span { padding: 0 20px; }
 .quantity-pdp > input { color: #FFFFFF; font: 2rem/normal "Futura-Book"; padding: 0.85rem .75rem; text-align: center; width: 40px; }
-.quantity-pdp > input[readonly] { background-color: #002332; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
+.quantity-pdp > input[readonly] { background-color: #1E1E1E; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
 .quantity-pdp > input[readonly]:focus { box-shadow: none; color: #FFFFFF; }
 .quantity-pdp > span:last-child { margin-right: 0; }
-.quantity-inc-dec { color: #002332; cursor: pointer; display: inline-block; font: 1.6rem/normal "Futura-Book"; }
-.box-product-detail-info > .btn-add-to-cart-pdp { margin-top: 20px; }
+.quantity-inc-dec { color: #1E1E1E; cursor: pointer; display: inline-block; font: 1.6rem/normal "Futura-Book"; }
+.box-product-detail-info > .btn-add-to-cart-pdp { margin-top: 15px; }
 
   /*------- Product Details Section Ends -------*/
 
   /*------- Related Products Section Starts -------*/
 
-.bg-related-product-pdp { background-color: rgb(3 130 183 / 10%); padding: 70px 15px 40px; }
+.bg-related-product-pdp { background-color: rgb(242 110 186 / 10%); padding: 70px 15px 40px; }
 
   /*------- Related Products Section Ends -------*/
 
@@ -309,27 +331,27 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 
   /*------- View Cart Section Starts -------*/
 
-.box-table-design { border: 2px solid #E91E63; margin-bottom: 50px; }
+.box-table-design { border: 2px solid #1E1E1E; margin-bottom: 50px; }
 .box-table-design-cart-totals,
 .box-table-design-products,
 .table-design { margin-bottom: 0; }
-.table-design > thead > tr > th { background-color: #002332; border-bottom: 0; color: #FFFFFF; font: 1.8rem/1.2 "Futura-Medium"; padding: 10px 15px; text-transform: uppercase; }
-.table-design > tbody > tr > td { border-bottom: 2px solid #E91E63; color: #002332; font: 1.8rem/normal "Futura-Medium"; padding: 10px 15px; vertical-align: middle; }
+.table-design > thead > tr > th { background-color: #1E1E1E; border-bottom: 0; color: #FFFFFF; font: 1.8rem/1.2 "Futura-Bold"; padding: 10px 15px; text-transform: uppercase; }
+.table-design > tbody > tr > td { border-bottom: 2px solid #1E1E1E; color: #1E1E1E; font: 1.8rem/normal "Futura-Medium"; padding: 10px 15px; vertical-align: middle; }
 .table-design > tbody > tr > td.total-label,
 .table-design > tbody > tr > td.total-value { background-color: #E91E63; color: #FFFFFF; }
 .table-design > tbody > tr:last-child > td { border-bottom: 0; padding: 15px; }
 .view-cart-image-product-name-vcp { align-items: center; display: -webkit-box; display: -webkit-flex; display: flex; }
 .view-cart-image-vcp > img { margin-right: 15px; width: 70px; }
-.view-cart-product-name-vcp > p { color: #002332; font-family: "Futura-Medium"; }
-.delete-product { color: #002332; cursor: pointer; font-size: 2.4rem; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+.view-cart-product-name-vcp > p { color: #1E1E1E; font-family: "Futura-Medium"; }
+.delete-product { color: #1E1E1E; cursor: pointer; font-size: 2.4rem; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
 .delete-product:hover { color: #DC143C; }
 .td-update-cart { text-align: right; }
-.btn-update-cart { background-color: #F26EBA; border: 0; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; color: #FFFFFF; font: 1.6rem/normal "Futura-Medium"; height: 54px; letter-spacing: 1px; padding: 10px 30px; text-align: center; text-transform: uppercase; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+.btn-update-cart { background: linear-gradient(#F26EBA, #FD7863); border: 0; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; color: #FFFFFF; font: 1.6rem/normal "Futura-Medium"; height: 54px; letter-spacing: 1px; padding: 10px 30px; text-align: center; text-transform: uppercase; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
 .btn-update-cart:hover,
 .btn-proceed-to-checkout:hover,
 .btn-place-order:hover,
 .btn-login-signup:hover,
-.btn-submit:hover { background-color: #FFB800; color: #1E1E1E; }
+.btn-submit:hover { background: linear-gradient(#FD7863, #F26EBA); }
 .btn-update-cart:focus,
 .btn-proceed-to-checkout:focus,
 .btn-place-order:focus,
@@ -337,11 +359,13 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 .btn-submit:focus { outline: 0; }
 .box-view-cart-totals-vcp,
 .box-view-cart-totals-cop { margin-bottom: 0; }
-.box-table-design > h4 { background-color: #E91E63; color: #FFFFFF; font: 2rem/normal "Futura-Medium"; padding: 10px 15px; text-align: center; text-transform: uppercase; }
+.box-table-design > h4 { background-color: #1E1E1E; color: #FFFFFF; font: 2rem/normal "Futura-Bold"; padding: 10px 15px; text-align: center; text-transform: uppercase; }
+.table-design-view-cart > tbody > tr > td:last-child,
+.table-design-products-checkout > tbody > tr > td:last-child { font-weight: bold; }
 .btn-proceed-to-checkout,
 .btn-place-order,
 .btn-login-signup,
-.btn-submit { background-color: #E91E63; border: 0; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; color: #FFFFFF; display: block; font: 1.6rem/normal "Futura-Medium"; letter-spacing: 0.5px; padding: 16px 32px; text-align: center; text-transform: uppercase; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 100%; }
+.btn-submit { background: linear-gradient(#F26EBA, #FD7863); border: 0; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; color: #FFFFFF; display: block; font: 1.6rem/normal "Futura-Medium"; letter-spacing: 1px; padding: 16px 32px; text-align: center; text-transform: uppercase; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 100%; }
 
   /*------- View Cart Section Ends -------*/
 
@@ -356,7 +380,7 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 .form-label-contact { color: #1E1E1E; font: 1.8rem/normal "Futura-Medium"; margin-bottom: 10px; }
 .form-label-contact > span.required { color: #DC143C; }
 .form-label-contact > span.optional { color: #1E1E1E; }
-.form-control-contact { border: 2px solid #1E1E1E; -webkit-border-radius: 22px; -moz-border-radius: 22px; -ms-border-radius: 22px; -o-border-radius: 22px; border-radius: 22px; color: #1E1E1E; font: 1.8rem/normal "Futura-Medium"; height: calc(4.4rem + 0px); padding: 10px 20px; }
+.form-control-contact { border: 2px solid #1E1E1E; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; color: #1E1E1E; font: 1.8rem/normal "Futura-Medium"; height: calc(4.4rem + 0px); padding: 10px 20px; }
 .form-control-contact::placeholder {
   color: #777777;
   opacity: 1;
@@ -364,16 +388,16 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 .form-control-contact::-ms-input-placeholder {
   color: #777777;
 }
-.form-control-contact:focus { background-color: rgb(3 130 183 / 10%); border-color: #F26EBA; box-shadow: none; }
-.form-control-contact:focus::placeholder { color: #1E1E1E; }
+.form-control-contact:focus { background-color: rgb(3 130 183 / 10%); box-shadow: none; }
+.form-control-contact:focus::placeholder { color: transparent; }
 textarea.form-control-contact { min-height: 140px; resize: none; }
-.box-checkout-products { border-bottom: 2px solid #E91E63; padding: 15px; }
+.box-checkout-products { border-bottom: 2px solid #1E1E1E; padding: 15px; }
 .box-checkout-products + .box-checkout-products { border-top: 0; }
 .box-checkout-products-image-name-qty { align-items: start; display: -webkit-box; display: -webkit-flex; display: flex; }
-.box-checkout-products-image-name-qty > img { margin-right: 10px; width: 100px; }
-.box-checkout-products-image-name-qty > div > h4 { color: #002332; font: 1.8rem/normal "Medium"; }
-.box-checkout-products-image-name-qty > div > p { color: #002332; font-family: "Futura-Medium"; }
-.box-checkout-products-amt > p { color: #002332; font-family: "Futura-Medium"; text-align: right; }
+.box-checkout-products-image-name-qty > img { margin-right: 10px; width: 70px; }
+.box-checkout-products-image-name-qty > div > h4 { color: #1E1E1E; font: 1.8rem/normal "Futura-Medium"; }
+.box-checkout-products-image-name-qty > div > p { color: #1E1E1E; font-family: "Futura-Book"; }
+.box-checkout-products-amt > p { color: #1E1E1E; font-family: "Futura-Medium"; font-weight: bold; text-align: right; }
 
   /*------- Checkout Section Ends -------*/
 
@@ -383,24 +407,22 @@ textarea.form-control-contact { min-height: 140px; resize: none; }
 
   /*------- Contact Info and Map Section Starts -------*/
 
-.bg-contact-info-map-cp { padding-bottom: 0; }
-.box-contact-info-cp { -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; margin-bottom: 30px; padding: 30px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
-.box-contact-info-cp-1 { background-color: rgb(16 110 171 / 20%); }
-.box-contact-info-cp-2 { background-color: rgb(51 176 74 / 20%); }
-.box-contact-info-cp-3 { background-color: rgb(93 18 189 / 20%); margin-bottom: 0; }
-.box-contact-icon-cp { -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; height: 80px; margin: 0 auto 20px; text-align: center; width: 80px; }
-.box-contact-icon-cp > i { color: #ffffff; font-size: 3.6rem; line-height: 80px; }
-.box-contact-icon-cp-1 { background-color: rgb(16 110 171 / 100%); }
-.box-contact-icon-cp-2 { background-color: rgb(51 176 74 / 100%); }
-.box-contact-icon-cp-3 { background-color: rgb(93 18 189 / 100%); }
+.bg-contact-info-cp { padding-bottom: 0; }
+.box-contact-info-cp { background-color: #F7F7F7; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; padding: 30px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+.box-contact-icon-cp { -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; margin: 0 auto 20px; text-align: center; }
+.box-contact-icon-cp > i { font-size: 3.6rem; }
+.box-contact-icon-cp-1 > i { color: #e91e63; }
+.box-contact-icon-cp-2 > i { color: #673ab7; }
+.box-contact-icon-cp-3 > i { color: #009688; }
 .box-contact-info-cp > address { color: #1E1E1E; font: 1.8rem/1.7 "Futura-Book"; text-align: center; }
 .box-contact-info-cp > address > span { display: block; }
 .box-contact-info-cp > p { font-family: "Futura-Book"; text-align: center; }
 .box-contact-info-cp > p > a { color: #1E1E1E; }
-.box-contact-info-cp-2 > p > a:hover { color: rgb(51 176 74 / 100%); }
-.box-contact-info-cp-3 > p > a:hover { color: rgb(93 18 189 / 100%); }
-.map-cp { border: 1px solid #cccccc; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; padding: 10px; height: 690px; width: 100%; }
+.box-contact-info-cp-2 > p > a:hover { color: #673ab7; }
+.box-contact-info-cp-3 > p > a:hover { color: #009688; }
 .btn-submit { width: auto; }
+.bg-contact-map-cp { padding: 0 15px 70px; }
+.map-cp { border: 1px solid #cccccc; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; padding: 10px; height: 690px; width: 100%; }
 
   /*------- Contact Info and Map Section Ends -------*/
 
