@@ -50,12 +50,11 @@ a::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -mo
 
 /*------- LogIn, SignUp, and Forgot Password Page Starts -------*/
 
-.bg-signup-login-fpwd { padding: 0; }
+.bg-signup-login-fpwd { padding: 0; position: relative; z-index: 1; }
+.bg-signup-login-fpwd::before { background: url("../images/login-banner.jpg") no-repeat top/cover; content: ""; display: block; height: 100vh; left: 0; position: absolute; top: 0; width: 50%; z-index: 1; }
 .bg-signup-login-fpwd > .row { margin: 0; }
 .bg-signup-login-fpwd > .row > [class*="col-"] { padding: 0; }
-.col-height-relative-1,
-.col-height-relative-2 { height: 100vh; position: relative; z-index: 1; }
-.bg-signup-login-fpwd-banner { background: url("../images/login-banner.jpg") no-repeat top/cover; height: 100vh; }
+.col-height-relative { height: 100vh; position: relative; z-index: 1; }
 .signup-box-contact-info,
 .login-box-contact-info,
 .fpwd-box-contact-info { left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 75%; z-index: 1; }

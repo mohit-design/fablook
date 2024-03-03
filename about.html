@@ -21,7 +21,98 @@
   <link rel="stylesheet" href="css/media.css" type="text/css">
 </head>
 <body>
-  <!-- Logo and Add to Cart Button Section Starts -->
+  <!-- Mobile Logo and Burger Menu Section Starts -->
+  <div class="container-fluid bg-logo-burger-menu-mobile">
+    <div class="row d-flex align-items-center">
+      <div class="col-3">
+      <div class="header-logo-mobile">
+        <a href="index.html" class="d-inline-flex align-items-center">
+          <img src="images/logo.png" class="img-fluid" alt="">
+        </a>
+      </div>
+      </div>
+      <div class="col-6">
+        <div class="btn-add-to-cart text-end">
+          <span>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="add-to-cart-span">Add to Cart</span>
+            <span class="add-to-cart-span-value">0</span>
+          </span>
+          <ul class="shopping-cart-listing-dropdown">
+            <li>
+              <div class="box-checkout-products">
+                <div class="row align-items-center">
+                  <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                    <div class="box-checkout-products-image-name-qty">
+                      <img src="images/product-1.png" class="img-fluid" alt="">
+                      <div>
+                        <h4>Name</h4>
+                        <p>Qty : 2</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="box-checkout-products-amt">
+                      <p>₹180 <i class="fa-solid fa-circle-xmark delete-product"></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="box-checkout-products">
+                <div class="row align-items-center">
+                  <div class="col-8 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                    <div class="box-checkout-products-image-name-qty">
+                      <img src="images/product-2.png" class="img-fluid" alt="">
+                      <div>
+                        <h4>Name</h4>
+                        <p>Qty : 2</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="box-checkout-products-amt">
+                      <p>₹180 <i class="fa-solid fa-circle-xmark delete-product"></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <form action="checkout.html">
+                <input type="submit" class="btn-proceed-to-checkout-white" value="Proceed To Checkout" />
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="hamburger-menu d-flex justify-content-end">
+          <div class="burger-menu">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Logo and Burger Menu Section Ends -->
+  <!-- Mobile Navbar Menu Section Starts -->
+  <div class="fixed-navbar-menu-mobile">
+    <div class="fixed-navbar-menu-mobile-close">
+      <i class="fa-solid fa-close"></i>
+    </div>
+    <ul class="menu-listing-mobile">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Our Products</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="login.html">Log In</a></li>
+    </ul>
+  </div>
+  <!-- Mobile Navbar Menu Section Ends -->
+  <!-- Desktop Logo and Add to Cart Button Section Starts -->
   <div class="container-fluid bg-logo-add-to-cart-desktop">
     <div class="container">
       <div class="row align-items-center">
@@ -91,20 +182,20 @@
       </div>
     </div>
   </div>
-  <!-- Logo and Add to Cart Button Section Ends -->
-  <!-- Menu Listing and LogIn and SignUp Button Section Starts -->
+  <!-- Desktop Logo and Add to Cart Button Section Ends -->
+  <!-- Desktop Menu Listing and LogIn and SignUp Button Section Starts -->
   <div class="container-fluid bg-menu-listing-login-signup-desktop">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-6 col-xxl-6">
           <ul class="menu-listing-desktop">
             <li><a href="index.html">Home</a></li>
-            <li class="about.html"><a href="about.html">About Us</a></li>
+            <li class="active"><a href="about.html">About Us</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-6 col-xxl-6">
           <ul class="header-login-signup-listing">
             <li><a href="login.html">LogIn</a></li>
             <li><a href="signup.html">SignUp</a></li>
@@ -113,7 +204,7 @@
       </div>
     </div>
   </div>
-  <!-- Menu Listing and LogIn and SignUp Button Section Ends -->
+  <!-- Desktop Menu Listing and LogIn and SignUp Button Section Ends -->
   <main class="main-wrapper">
     <!-- Inner Banner Section Starts -->
     <div class="container-fluid bg-inner-banner-ip">
@@ -173,13 +264,13 @@
           <div class="col-12 col-sm-6 col-md-3 col-xl-3 col-xxl-3" data-aos="fade-up" data-aos-duration="1000">
             <div class="box-offer-ap">
               <img src="images/return-refund.png" class="img-fluid" alt="">
-              <p>Return and Refund</p>
+              <p>Return & Refund</p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-3 col-xl-3 col-xxl-3" data-aos="fade-up" data-aos-duration="1000">
             <div class="box-offer-ap">
               <img src="images/gift-voucher.png" class="img-fluid" alt="">
-              <p>Gift and Voucher</p>
+              <p>Gift & Voucher</p>
             </div>
           </div>
         </div>
@@ -211,7 +302,7 @@
     <div class="container-fluid bg-footer-2">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
             <div class="footer-heading">
               <h3>Social <span>Platforms</span></h3>
             </div>
@@ -221,7 +312,7 @@
               <li><a href="" target="_blank" aria-label=""><i class="fa-brands fa-linkedin-in"></i></a></li>
             </ul>
           </div>
-          <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
             <div class="footer-heading contact-information-footer-heading">
               <h3>Contact <span>Information</span></h3>
             </div>
@@ -239,7 +330,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
             <div class="copyright-info">
               <p>© 2024 <span>Fablook</span>. All Rights Reserved.</p>
             </div>

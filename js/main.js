@@ -29,12 +29,7 @@ $(function() {
 		}
 	});
 	// Shopping Listing JS
-	$(".btn-profile-add-to-cart-donate-now > li.shopping-cart-li > span").click(function() {
-		$(this).parent().parent().find('ul').slideUp(700);
-		$(".btn-profile-add-to-cart-donate-now > li.shopping-cart-li > span").parent().parent().removeClass("active");
-		if(!$(this).next().is(":visible")) {
-				$(this).next().slideDown(700);
-				$(this).parent().addClass("active");
-		}
+	$(".btn-add-to-cart > span").click(function() {
+		$(".shopping-cart-listing-dropdown").slideToggle(700);
 	});
 });

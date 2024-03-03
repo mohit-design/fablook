@@ -11,13 +11,16 @@ body.active { overflow: hidden; }
 
 /*-------- Common CSS Ends -------*/
 
-/*------- LogIn and SignUp Page Starts -------*/
+/*------- LogIn, SignUp, and Forgot Password Page Starts -------*/
 
-.box-login-signup { padding: 20px; }
-.box-login-signup-heading > p,
-.form-group-contact { margin-bottom: 20px; }
+.bg-signup-login-fpwd { position: static; }
+.bg-signup-login-fpwd::before { display: none; }
+.col-height-relative { height: auto; position: static; }
+.signup-box-contact-info,
+.login-box-contact-info,
+.fpwd-box-contact-info { margin: 0 auto; position: static; -webkit-transform: none; -moz-transform: none; -ms-transform: none; -o-transform: none; transform: none; width: 100%; }
 
-/*------- LogIn and SignUp Page Ends -------*/
+/*------- LogIn, SignUp, and Forgot Password Page Ends -------*/
 
 /*------- Home Page Starts -------*/
 
@@ -64,7 +67,7 @@ body.active { overflow: hidden; }
   /*------- Desktop Header Section Starts -------*/
 
 .bg-header-desktop { display: none; }
-.shopping-cart-listing-dropdown { min-width: 100%; right: -85px; top: 60px; z-index: 2; }
+.shopping-cart-listing-dropdown { min-width: 100%; right: -85px; top: 50px; width: 300px; z-index: 2; }
 
   /*------- Desktop Header Section Ends -------*/
 
@@ -84,7 +87,7 @@ body.active { overflow: hidden; }
   /*------- Slider Section Starts -------*/
 
 .bg-banner-slider { padding: 0; }
-.box-banner { left: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 85%; }
+.box-banner { left: 50%; padding: 20px; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 85%; }
 .box-banner > h1 { font-size: 3rem; }
 .btn-read-more-view-products { display: block; }
 .btn-read-more-view-products > li { margin-right: 0; }
@@ -97,17 +100,25 @@ body.active { overflow: hidden; }
 
   /*------- Slider Section Ends -------*/
 
+  /*------- Category Section Starts -------*/
+
+.box-category { margin-bottom: 20px; }
+.box-category-name > h4 { font-size: 1.8rem; }
+
+  /*------- Category Section Ends -------*/
+
   /*------- About Us Section Starts -------*/
 
-.bg-about { padding: 75px 15px 20px; }
-.ohm-image-about { display: none; }
+.bg-about::before,
+.bg-about-ap::before { height: 100%; }
+.about-image-bottom-right { display: none; }
 .about-image-top { left: 0; top: -50px; }
 .about-image-top > img,
 .about-image-bottom > img { height: 100px; width: 100px; }
 .about-image-center > img { width: 85%; }
 .about-image-bottom { bottom: -50px; right: 0; }
-.about-info { margin: 70px 0 0; }
-.about-desc > p { text-align: justify; }
+.about-info { margin: 20px 0 0 0; }
+.about-desc > p { margin-bottom: 15px; text-align: justify; }
 
   /*------- About Us Section Ends -------*/
 
@@ -118,6 +129,22 @@ body.active { overflow: hidden; }
 .btn-read-view-more-products { margin-top: 0; }
 
   /*------- Products Section Ends -------*/
+
+  /*------- Testimonials Section Starts -------*/
+
+.box-testimonials-slick-slider-profile-image > img { margin: 0 auto 20px; padding: 10px; width: 140px; }
+.box-testimonials-slick-slider-desc > p { margin-bottom: 20px; padding: 0 40px; text-align: center; }
+.box-testimonials-slick-slider-quote-image > img { margin: 0 auto 20px; width: 70px; }
+.box-testimonials-slick-slider-person-info > h3 { font-size: 2rem; }
+.box-testimonials-slick-slider-person-info > p { font-size: 1.6rem; }
+.testimonials-slick-slider .slick-prev,
+.testimonials-slick-slider .slick-next { height: 44px; width: 44px; }
+.testimonials-slick-slider .slick-prev { left: -10px; }
+.testimonials-slick-slider .slick-next { right: -10px; }
+.testimonials-slick-slider .slick-next:before,
+.testimonials-slick-slider .slick-prev:before { font-size: 1.6rem; }
+
+  /*------- Testimonials Section Ends -------*/
 
   /*------- Footer Section Starts -------*/
 
@@ -147,21 +174,14 @@ body.active { overflow: hidden; }
 
 	/*------- Inner Banner Section Ends -------*/
 
-  /*------- About Us Section Starts -------*/
+  /*------- Offer Section Starts -------*/
 
-.about-desc-ap > p:last-child { margin-bottom: 0; }
+.bg-offer-ap { padding-bottom: 0; }
+.box-offer-ap { margin-bottom: 20px; }
+.box-offer-ap > img { margin-bottom: 15px; }
+.box-offer-ap > p { font-size: 1.8rem; }
 
-	/*------- About Us Section Ends -------*/
-
-  /*------- Vision and Mission Section Starts -------*/
-
-.bg-vision-mission-ap { padding: 0 15px; }
-.vision-mission-section-heading > h2 { display: block; }
-.vision-mission-section-heading > h2 > img { height: 50px; margin-right: 5px; width: 50px; }
-.vision-mission-section-heading > h2 > span { margin-left: 0; }
-.vision-mission-info > p { margin-bottom: 20px; }
-
-	/*------- Vision and Mission Section Ends -------*/
+	/*------- Offer Section Ends -------*/
 
 /*------- About Us Page Ends -------*/
 
@@ -179,9 +199,10 @@ body.active { overflow: hidden; }
 
   /*------- Product Details Section Starts -------*/
 
-.box-product-detail-image > img { margin-bottom: 20px; }
+.box-product-detail-image { margin-bottom: 20px; padding: 20px; }
 .box-product-detail-heading > h3 { font-size: 2rem; }
 .box-product-detail-desc > p { text-align: justify; }
+.box-product-detail-info > .btn-add-to-cart-pdp { margin-top: 20px; }
 
   /*------- Product Details Section Ends -------*/
 
@@ -194,6 +215,7 @@ body.active { overflow: hidden; }
 .box-table-design-update-cart { margin-bottom: 20px; }
 .view-cart-image-product-name-vcp { display: block; }
 .view-cart-image-vcp > img { margin: 0 0 10px 0; width: 100%; }
+.view-cart-product-name-vcp > p { text-align: center; }
 .td-update-cart { text-align: left; }
 
   /*------- View Cart Section Ends -------*/
@@ -204,12 +226,11 @@ body.active { overflow: hidden; }
 
   /*------- Contact Info and Map Section Starts -------*/
 
+.bg-contact-info-cp { padding-bottom: 0; }
 .box-contact-info-cp { margin-bottom: 20px; padding: 20px; }
-.box-contact-icon-cp { height: 70px; width: 70px; }
-.box-contact-icon-cp > i { font-size: 3rem; line-height: 70px; }
-.box-contact-info-cp > address { font-size: 1.6rem; }
+.box-contact-icon-cp > i { font-size: 3rem; }
 .map-cp { height: 400px; }
-.bg-contact-form { padding-top: 0; }
+.bg-contact-form { padding-bottom: 0; padding-top: 0; }
 
   /*------- Contact Info and Map Section Ends -------*/
 
@@ -226,15 +247,20 @@ body.active { overflow: hidden; }
 .section-heading > div { font-size: 1.6rem; }
 .section-heading > h2 { font-size: 2.4rem; margin-bottom: 20px; }
 .section-heading-ip > h1 { font-size: 3rem; }
-p { font-size: 1.6rem; }
 
 /*-------- Common CSS Ends -------*/
 
-/*------- LogIn and SignUp Page Starts -------*/
+/*------- LogIn, SignUp, and Forgot Password Page Starts -------*/
 
-.box-login-signup-heading > p { margin-bottom: 20px; }
+.bg-signup-login-fpwd { position: static; }
+.bg-signup-login-fpwd::before { display: none; }
+.col-height-relative { height: auto; position: static; }
+.signup-box-contact-info,
+.login-box-contact-info,
+.fpwd-box-contact-info { margin: 0 auto; position: static; -webkit-transform: none; -moz-transform: none; -ms-transform: none; -o-transform: none; transform: none; width: 70%; }
+.signup-box-contact-info { width: 95%; }
 
-/*------- LogIn and SignUp Page Ends -------*/
+/*------- LogIn, SignUp, and Forgot Password Page Ends -------*/
 
 /*------- Home Page Starts -------*/
 
@@ -301,7 +327,7 @@ p { font-size: 1.6rem; }
   /*------- Slider Section Starts -------*/
 
 .bg-banner-slider { padding: 0; }
-.box-banner { left: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 80%; }
+.box-banner { left: 50%; padding: 20px; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 85%; }
 .box-banner > h1 { font-size: 3rem; }
 .btn-read-more-view-products { display: block; }
 .btn-read-more-view-products > li { margin-right: 0; }
@@ -309,20 +335,29 @@ p { font-size: 1.6rem; }
 .btn-read-more-view-products > li:last-child { margin-top: 15px; }
 .btn-read-more-view-products > li:last-child > a { padding: 14px 17px; }
 .banner-slick-slider .slick-slide img { height: 100vh; }
-.banner-slick-slider .slick-prev { -webkit-border-radius: 0 7px 7px 0; -moz-border-radius: 0 7px 7px 0; -ms-border-radius: 0 7px 7px 0; -o-border-radius: 0 7px 7px 0; border-radius: 0 7px 7px 0; height: 44px; width: 44px; }
-.banner-slick-slider .slick-next { -webkit-border-radius: 7px 0 0 7px; -moz-border-radius: 7px 0 0 7px; -ms-border-radius: 7px 0 0 7px; -o-border-radius: 7px 0 0 7px; border-radius: 7px 0 0 7px; height: 44px; width: 44px; }
+.banner-slick-slider .slick-prev { -webkit-border-radius: 0 7px 7px 0; -moz-border-radius: 0 7px 7px 0; -ms-border-radius: 0 7px 7px 0; -o-border-radius: 0 7px 7px 0; border-radius: 0 7px 7px 0; height: 40px; width: 40px; }
+.banner-slick-slider .slick-next { -webkit-border-radius: 7px 0 0 7px; -moz-border-radius: 7px 0 0 7px; -ms-border-radius: 7px 0 0 7px; -o-border-radius: 7px 0 0 7px; border-radius: 7px 0 0 7px; height: 40px; width: 40px; }
 
   /*------- Slider Section Ends -------*/
 
+  /*------- Category Section Starts -------*/
+
+.box-category { margin-bottom: 30px; }
+
+  /*------- Category Section Ends -------*/
+
   /*------- About Us Section Starts -------*/
 
-.bg-about { padding: 130px 15px 30px; }
-.ohm-image-about { display: none; }
-.about-image-top { left: 0; top: -100px; }
-.about-image-center > img { width: 70%; }
-.about-image-bottom { bottom: -80px; right: 0; }
-.about-info { margin: 100px 0 0; }
-.about-desc > p { text-align: justify; }
+.bg-about::before,
+.bg-about-ap::before { height: 100%; }
+.about-image-bottom-right { display: none; }
+.about-image-top { left: 0; top: -50px; }
+.about-image-top > img,
+.about-image-bottom > img { height: 100px; width: 100px; }
+.about-image-center > img { width: 85%; }
+.about-image-bottom { bottom: -50px; right: 0; }
+.about-info { margin: 20px 0 0 0; }
+.about-desc > p { margin-bottom: 15px; text-align: justify; }
 
   /*------- About Us Section Ends -------*/
 
@@ -332,50 +367,47 @@ p { font-size: 1.6rem; }
 
   /*------- Products Section Ends -------*/
 
-  /*------- Extra Details Section Starts -------*/
+  /*------- Testimonials Section Starts -------*/
 
-.bg-extra-details { padding: 30px 15px 0; }
+.box-testimonials-slick-slider-profile-image > img { margin: 0 auto 30px; padding: 10px; width: 140px; }
+.box-testimonials-slick-slider-desc > p { margin-bottom: 30px; padding: 0 70px; text-align: center; }
+.box-testimonials-slick-slider-quote-image > img { margin: 0 auto 30px; width: 70px; }
+.box-testimonials-slick-slider-person-info > h3 { font-size: 2.2rem; }
+.testimonials-slick-slider .slick-prev,
+.testimonials-slick-slider .slick-next { height: 44px; width: 44px; }
+.testimonials-slick-slider .slick-prev { left: -10px; }
+.testimonials-slick-slider .slick-next { right: -10px; }
+.testimonials-slick-slider .slick-next:before,
+.testimonials-slick-slider .slick-prev:before { font-size: 1.6rem; }
 
-  /*------- Extra Details Section Ends -------*/
+  /*------- Testimonials Section Ends -------*/
 
   /*------- Footer Section Starts -------*/
 
-.footer-about-desc > p { margin-bottom: 20px; padding-right: 0; text-align: justify; }
-.footer-heading > h3 { font-size: 2rem; margin-bottom: 15px; }
-.quick-links-listing > li,
-.footer-contact-listing > li { margin-bottom: 10px; }
-.quick-links-listing > li:last-child,
-.footer-contact-listing > li:last-child { margin-bottom: 20px; }
+.footer-logo > a > img { margin-bottom: 30px; width: 150px; }
+.footer-quick-links-listing > li { margin-right: 70px; }
+.footer-heading > h3 { font-size: 1.8rem; margin-bottom: 15px; }
+.footer-contact-listing { margin-bottom: 30px; }
+.footer-contact-listing,
+.contact-information-footer-heading > h3 { text-align: left; }
+.copyright-info { border-top: 1px solid #E91E63; padding-top: 30px; }
+.copyright-info > p,
+.design-develop-by > p { font-size: 1.6rem; text-align: center; }
 
   /*------- Footer Section Ends -------*/
-
-  /*------- Copyright Section Starts -------*/
-
-.copyright-info > p,
-.design-develop-by > p { text-align: center; }
-.copyright-info > p { margin-bottom: 10px; }
-
-  /*------- Copyright Section Ends -------*/
 
 /*------- Home Page Ends -------*/
 
 /*------- About Us Page Starts -------*/
 
-  /*------- About Us Section Starts -------*/
+  /*------- Offer Section Starts -------*/
 
-.about-desc-ap > p:last-child { margin-bottom: 0; }
+.bg-offer-ap { padding-bottom: 0; }
+.box-offer-ap { margin-bottom: 30px; }
+.box-offer-ap > img { margin-bottom: 15px; }
+.box-offer-ap > p { font-size: 1.8rem; }
 
-  /*------- About Us Section Ends -------*/
-
-  /*------- Vision and Mission Section Starts -------*/
-
-.bg-vision-mission-ap { padding: 0 15px; }
-.vision-mission-section-heading > h2 { display: block; }
-.vision-mission-section-heading > h2 > img { height: 50px; margin-right: 5px; width: 50px; }
-.vision-mission-section-heading > h2 > span { margin-left: 0; }
-.vision-mission-info > p { margin-bottom: 30px; }
-
-	/*------- Vision and Mission Section Ends -------*/
+	/*------- Offer Section Ends -------*/
 
 /*------- About Us Page Ends -------*/
 
@@ -393,9 +425,10 @@ p { font-size: 1.6rem; }
 
   /*------- Product Details Section Starts -------*/
 
-.box-product-detail-image > img { margin-bottom: 20px; }
+.box-product-detail-image { margin-bottom: 20px; padding: 20px; }
 .box-product-detail-heading > h3 { font-size: 2rem; }
 .box-product-detail-desc > p { text-align: justify; }
+.box-product-detail-info > .btn-add-to-cart-pdp { margin-top: 20px; }
 
   /*------- Product Details Section Ends -------*/
 
@@ -418,13 +451,11 @@ p { font-size: 1.6rem; }
 
   /*------- Contact Info and Map Section Starts -------*/
 
-.box-contact-info-cp { padding: 20px; }
-.box-contact-info-cp-3 { margin-bottom: 30px; }
-.box-contact-icon-cp { height: 70px; width: 70px; }
-.box-contact-icon-cp > i { font-size: 3rem; line-height: 70px; }
-.box-contact-info-cp > address { font-size: 1.6rem; }
+.bg-contact-info-cp { padding-bottom: 0; }
+.box-contact-info-cp { margin-bottom: 30px; padding: 20px; }
+.box-contact-icon-cp > i { font-size: 3rem; }
 .map-cp { height: 400px; }
-.bg-contact-form { padding-top: 0; }
+.bg-contact-form { padding-bottom: 0; padding-top: 0; }
 
   /*------- Contact Info and Map Section Ends -------*/
 
@@ -442,16 +473,23 @@ body.active { overflow: hidden; }
 .section-heading > div > img { display: block; }
 .section-heading > h2 { font-size: 2.4rem; margin-bottom: 20px; }
 .section-heading-ip > h1 { font-size: 3rem; }
+.btn-secondary > a { padding: 15px 20px; }
 
 /*-------- Common CSS Ends -------*/
 
+/*------- LogIn, SignUp, and Forgot Password Page Starts -------*/
+
+.bg-signup-login-fpwd { position: static; }
+.bg-signup-login-fpwd::before { display: none; }
+.col-height-relative { height: auto; position: static; }
+.signup-box-contact-info,
+.login-box-contact-info,
+.fpwd-box-contact-info { margin: 0 auto; position: static; -webkit-transform: none; -moz-transform: none; -ms-transform: none; -o-transform: none; transform: none; width: 40%; }
+.signup-box-contact-info { width: 95%; }
+
+/*------- LogIn, SignUp, and Forgot Password Page Ends -------*/
+
 /*------- Home Page Starts -------*/
-
-  /*------- Logo and Add to Cart Button Section Starts -------*/
-
-.bg-logo-add-to-cart-desktop { padding: 15px; }
-
-  /*------- Logo and Add to Cart Button Section Ends -------*/
 
   /*------- Menu Listing and LogIn and SignUp Button Section Starts -------*/
 
@@ -470,15 +508,24 @@ body.active { overflow: hidden; }
 
   /*------- Slider Section Ends -------*/
 
+  /*------- Category Section Starts -------*/
+
+.box-category { margin-bottom: 30px; }
+
+  /*------- Category Section Ends -------*/
+
   /*------- About Us Section Starts -------*/
 
-.bg-about { padding: 130px 15px 30px; }
-.ohm-image-about { display: none; }
-.about-image-top { left: 0; top: -100px; }
-.about-image-center > img { width: 70%; }
-.about-image-bottom { bottom: -80px; right: 0; }
-.about-info { margin: 100px 0 0; }
-.about-desc > p { text-align: justify; }
+.bg-about::before,
+.bg-about-ap::before { height: 100%; }
+.about-image-bottom-right { display: none; }
+.about-image-top { left: 0; top: -50px; }
+.about-image-top > img,
+.about-image-bottom > img { height: 100px; width: 100px; }
+.about-image-center > img { width: 85%; }
+.about-image-bottom { bottom: -50px; right: 0; }
+.about-info { margin: 30px 0 0 0; }
+.about-desc > p { margin-bottom: 15px; text-align: justify; }
 
   /*------- About Us Section Ends -------*/
 
@@ -488,28 +535,31 @@ body.active { overflow: hidden; }
 
   /*------- Products Section Ends -------*/
 
-  /*------- Extra Details Section Starts -------*/
+  /*------- Testimonials Section Starts -------*/
 
-.bg-extra-details { padding: 30px 15px 0; }
+.box-testimonials-slick-slider-profile-image > img { margin: 0 auto 30px; padding: 10px; width: 140px; }
+.box-testimonials-slick-slider-desc > p { margin-bottom: 30px; padding: 0 70px; text-align: center; }
+.box-testimonials-slick-slider-quote-image > img { margin: 0 auto 30px; width: 70px; }
+.box-testimonials-slick-slider-person-info > h3 { font-size: 2.2rem; }
+.testimonials-slick-slider .slick-prev,
+.testimonials-slick-slider .slick-next { height: 44px; width: 44px; }
+.testimonials-slick-slider .slick-next:before,
+.testimonials-slick-slider .slick-prev:before { font-size: 1.6rem; }
 
-  /*------- Extra Details Section Ends -------*/
+  /*------- Testimonials Section Ends -------*/
 
   /*------- Footer Section Starts -------*/
 
-.footer-about-desc > p { margin-bottom: 20px; padding-right: 0; text-align: justify; }
+.footer-logo > a > img { margin-bottom: 40px; width: 150px; }
 .footer-heading > h3 { font-size: 2rem; margin-bottom: 15px; }
-.quick-links-listing > li,
-.footer-contact-listing > li { margin-bottom: 10px; }
+.footer-contact-listing { margin-bottom: 30px; }
+.footer-contact-listing,
+.contact-information-footer-heading > h3 { text-align: left; }
+.copyright-info { border-top: 1px solid #E91E63; padding-top: 30px; }
+.copyright-info > p,
+.design-develop-by > p { font-size: 1.6rem; text-align: center; }
 
   /*------- Footer Section Ends -------*/
-
-  /*------- Copyright Section Starts -------*/
-
-.copyright-info > p,
-.design-develop-by > p { text-align: center; }
-.copyright-info > p { margin-bottom: 10px; }
-
-  /*------- Copyright Section Ends -------*/
 
 /*------- Home Page Ends -------*/
 
@@ -521,21 +571,11 @@ body.active { overflow: hidden; }
 
 	/*------- Inner Banner Section Ends -------*/
 
-  /*------- About Us Section Starts -------*/
+  /*------- Offer Section Starts -------*/
 
-.about-desc-ap > p:last-child { margin-bottom: 0; }
+.box-offer-ap > p { font-size: 1.8rem; }
 
-  /*------- About Us Section Ends -------*/
-
-  /*------- Vision and Mission Section Starts -------*/
-
-.bg-vision-mission-ap { padding: 0 15px; }
-.vision-mission-section-heading > h2 { display: block; }
-.vision-mission-section-heading > h2 > img { height: 55px; margin-right: 5px; width: 55px; }
-.vision-mission-section-heading > h2 > span { margin-left: 0; }
-.vision-mission-info > p { margin-bottom: 30px; }
-
-	/*------- Vision and Mission Section Ends -------*/
+	/*------- Offer Section Ends -------*/
 
 /*------- About Us Page Ends -------*/
 
@@ -574,11 +614,11 @@ body.active { overflow: hidden; }
 
   /*------- Contact Info and Map Section Starts -------*/
 
-.box-contact-info-cp { padding: 20px; }
-.box-contact-icon-cp { height: 70px; width: 70px; }
-.box-contact-icon-cp > i { font-size: 3rem; line-height: 70px; }
-.map-cp { height: 600px; }
-.bg-contact-form { padding-top: 0; }
+.bg-contact-info-cp { padding-bottom: 0; }
+.box-contact-info-cp { margin-bottom: 30px; padding: 20px; }
+.box-contact-icon-cp > i { font-size: 3rem; }
+.map-cp { height: 400px; }
+.bg-contact-form { padding-bottom: 0; padding-top: 0; }
 
   /*------- Contact Info and Map Section Ends -------*/
 
@@ -596,8 +636,19 @@ body.active { overflow: hidden; }
 .section-heading > div > img { display: block; }
 .section-heading > h2 { font-size: 2.4rem; margin-bottom: 20px; }
 .section-heading-ip > h1 { font-size: 3rem; }
+.btn-secondary > a { padding: 15px 20px; }
 
 /*-------- Common CSS Ends -------*/
+
+/*------- LogIn, SignUp, and Forgot Password Page Starts -------*/
+
+.bg-signup-login-fpwd { padding: 0; }
+.signup-box-contact-info,
+.login-box-contact-info,
+.fpwd-box-contact-info { width: 70%; }
+.signup-box-contact-info { width: 88%; }
+
+/*------- LogIn, SignUp, and Forgot Password Page Ends -------*/
 
 /*------- Home Page Starts -------*/
 
@@ -622,14 +673,24 @@ body.active { overflow: hidden; }
 
   /*------- Slider Section Ends -------*/
 
+  /*------- Category Section Starts -------*/
+
+.box-category { margin-bottom: 30px; }
+
+  /*------- Category Section Ends -------*/
+
   /*------- About Us Section Starts -------*/
 
-.bg-about { padding: 130px 15px 30px; }
-.ohm-image-about { display: none; }
-.about-image-top { left: 0; top: -100px; }
-.about-image-center > img { width: 70%; }
-.about-image-bottom { bottom: -80px; right: 0; }
-.about-desc > p { text-align: justify; }
+.bg-about::before,
+.bg-about-ap::before { height: 100%; }
+.about-image-bottom-right { display: none; }
+.about-image-top { left: 0; top: -50px; }
+.about-image-top > img,
+.about-image-bottom > img { height: 100px; width: 100px; }
+.about-image-center > img { width: 85%; }
+.about-image-bottom { bottom: -50px; right: 0; }
+.about-info { margin: 20px 0 0 0; }
+.about-desc > p { margin-bottom: 15px; text-align: justify; }
 
   /*------- About Us Section Ends -------*/
 
@@ -639,28 +700,22 @@ body.active { overflow: hidden; }
 
   /*------- Products Section Ends -------*/
 
-  /*------- Extra Details Section Starts -------*/
+  /*------- Testimonials Section Starts -------*/
 
-.bg-extra-details { padding: 30px 15px 0; }
+.box-testimonials-slick-slider-profile-image > img { margin: 0 auto 30px; padding: 10px; width: 140px; }
+.box-testimonials-slick-slider-desc > p { margin-bottom: 30px; padding: 0 70px; text-align: center; }
+.box-testimonials-slick-slider-quote-image > img { margin: 0 auto 30px; width: 70px; }
+.box-testimonials-slick-slider-person-info > h3 { font-size: 2.2rem; }
 
-  /*------- Extra Details Section Ends -------*/
+  /*------- Testimonials Section Ends -------*/
 
   /*------- Footer Section Starts -------*/
 
-.footer-about-desc > p { margin-bottom: 20px; padding-right: 0; text-align: justify; }
-.footer-heading > h3 { font-size: 2rem; margin-bottom: 15px; }
-.quick-links-listing > li,
-.footer-contact-listing > li { margin-bottom: 10px; }
+.footer-logo > a > img { margin-bottom: 40px; width: 160px; }
+.footer-heading > h3 { font-size: 2.2rem; }
+.footer-contact-listing { margin-bottom: 30px; }
 
   /*------- Footer Section Ends -------*/
-
-  /*------- Copyright Section Starts -------*/
-
-.copyright-info > p,
-.design-develop-by > p { text-align: center; }
-.copyright-info > p { margin-bottom: 10px; }
-
-  /*------- Copyright Section Ends -------*/
 
 /*------- Home Page Ends -------*/
 
@@ -672,21 +727,11 @@ body.active { overflow: hidden; }
 
 	/*------- Inner Banner Section Ends -------*/
 
-  /*------- About Us Section Starts -------*/
+  /*------- Offer Section Starts -------*/
 
-.about-desc-ap > p:last-child { margin-bottom: 0; }
+.box-offer-ap > p { font-size: 1.8rem; }
 
-  /*------- About Us Section Ends -------*/
-
-  /*------- Vision and Mission Section Starts -------*/
-
-.bg-vision-mission-ap { padding: 20px 15px 0; }
-.vision-mission-section-heading > h2 { display: block; }
-.vision-mission-section-heading > h2 > img { height: 55px; margin-right: 5px; width: 55px; }
-.vision-mission-section-heading > h2 > span { margin-left: 0; }
-.vision-mission-info > p { margin-bottom: 30px; }
-
-	/*------- Vision and Mission Section Ends -------*/
+	/*------- Offer Section Ends -------*/
 
 /*------- About Us Page Ends -------*/
 
@@ -725,11 +770,11 @@ body.active { overflow: hidden; }
 
   /*------- Contact Info and Map Section Starts -------*/
 
-.box-contact-info-cp { padding: 20px; }
-.box-contact-icon-cp { height: 70px; width: 70px; }
-.box-contact-icon-cp > i { font-size: 3rem; line-height: 70px; }
-.map-cp { height: 600px; }
-.bg-contact-form { padding-top: 0; }
+.bg-contact-info-cp { padding-bottom: 0; }
+.box-contact-info-cp { margin-bottom: 30px; padding: 20px; }
+.box-contact-icon-cp > i { font-size: 3rem; }
+.map-cp { height: 400px; }
+.bg-contact-form { padding-bottom: 0; padding-top: 0; }
 
   /*------- Contact Info and Map Section Ends -------*/
 
